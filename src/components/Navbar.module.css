@@ -1,0 +1,16 @@
+.nav {
+    margin: 0;
+    padding: 0 1.5vw;
+    color: white;
+    cursor: pointer;
+}
+
+.nav:hover {
+    transform: translate(0, -0.5vh);
+    transition: 0.1s;
+}
+
+.nav img {
+    filter: invert(1);
+    width: 2vw;
+}

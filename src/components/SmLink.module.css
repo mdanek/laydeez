@@ -1,0 +1,13 @@
+.smlink {
+    cursor: pointer;
+}
+
+.smlink:hover {
+    transform: translate(0, -0.5vh);
+    transition: 0.1s;
+}
+
+.smlink li img {
+    filter: invert(1);
+    width: 2vw;
+}

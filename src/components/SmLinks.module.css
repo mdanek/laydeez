@@ -1,0 +1,12 @@
+.smlinks {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 0.5rem;
+    display: flex;
+}
+
+.smlinks li {
+    padding: 0 0.3vw;
+    color: white;
+}

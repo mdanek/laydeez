@@ -1,0 +1,10 @@
+.logo {
+    padding-left: 5vw;
+    padding-top: 5vh;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.logoImg {
+    height: 10vh;
+}

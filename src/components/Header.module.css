@@ -1,13 +1,15 @@
 .header {
-    display: flex;
-    width: 100%;
     height: fit-content;
+    align-items: center
+    /* display: flex;
+    width: 100%;
+    height: fit-content; */
 }
 
 .rightSide {
-    display: flex;
+    /* display: flex;
     flex-grow: 1;
     justify-content: flex-end;
     padding-right: 5vw;
-    padding-top: 5vh;
+    padding-top: 5vh; */
 }

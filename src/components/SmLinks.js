@@ -41,7 +41,7 @@ const SmLinks = () => {
         // {smlinksarr.map((smlink, index) => 
         //     (<SmLink key={index} smlink={smlink} />))}
         // </ul>
-        <ul className={styles.smlinks}>
+        <ul className={`${styles.smlinks} col-11 justify-content-end`}>
         {smlinksobj.map((smlink, index) => 
             (<SmLink key={index} smlink={smlink} />))}
         </ul>

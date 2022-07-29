@@ -14,7 +14,7 @@ function App() {
   const Page = pages[0];
 
   return (
-    <div className="mycontainer">
+    <div className="container-fluid">
       <Hero></Hero>
       <Team></Team>
       <Utilities></Utilities>

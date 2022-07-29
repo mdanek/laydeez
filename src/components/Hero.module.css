@@ -1,5 +1,5 @@
 .hero {
-    background: url('../assets/hero1a.png') no-repeat center 10%;
+    background: url('../assets/hero1b.png') no-repeat center 10%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
@@ -7,18 +7,48 @@
     background-size: cover;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
     scroll-snap-align: start;
+    align-content: space-between;
+    /* overflow: hidden; */
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; */
 }
 
 .hero .heroBody {
-    width: 100%;
+    height: 70vh;
+    width: 40vw;
     display: flex;
-    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    gap: 1rem;
+    /* gap: 1.5rem;
     align-items: flex-end;
-    transform: translate(10vw, -7vh);
+    transform: translate(10vw, -7vh); */
+}
+
+.hero .heroBody .img {
+    width: 50%;
+    height: 50%;
+    background: url('../assets/whoruns.png') no-repeat center;
+    background-size: contain;
+}
+
+.hero .heroBody h3 {
+    /* flex-direction: column; */
+    width: 50%;
+    align-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.hero .heroBody .buttons {
+    /* flex-direction: column; */
+    width: 50%;
+    display: flex;
+    align-content: center;
+    gap: 1rem;
 }
 
 /* .hero .heroBody a {

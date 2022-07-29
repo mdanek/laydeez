@@ -4,7 +4,7 @@ const Button = ({ button }) => {
 
     return (
         <a className={`${styles.button} button`} href={button.link}>
-            <button>{button.text}</button>
+            <img src={button.img} alt={button.text} className='img-responsive'></img>
         </a>
     )
 }

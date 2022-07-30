@@ -1,7 +1,13 @@
 .team {
+    background: url('../assets/team/teamback.png') no-repeat center 10%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     width: 100%;
     height: 100%;
-    background-color: bisque;
     scroll-snap-align: start;
+    align-content: space-between;
 
 }

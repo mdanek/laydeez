@@ -1,0 +1,10 @@
+.app {
+    background-color: rgb(91, 196, 233);
+    height: 100%;
+    width: 100%;
+}
+
+/* .closed {
+    transform: translate(-20vw, 20vh);
+    transition: 0.2s;
+} */

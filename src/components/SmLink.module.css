@@ -11,3 +11,8 @@
     filter: invert(1);
     width: 2vw;
 }
+
+.small {
+    width: 1.2vw!important;
+    filter: invert(63%) sepia(40%) saturate(4324%) hue-rotate(183deg) brightness(98%) contrast(97%) !important;
+}

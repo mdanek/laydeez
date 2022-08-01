@@ -20,7 +20,7 @@ const openseaBtn = {
 const Hero = () => {
 
     return (
-        <div className={`${styles.hero} d-flex flex-wrap`}>
+        <div id="hero" className={`${styles.hero} d-flex flex-wrap`}>
             <Header></Header>
             <div className={`${styles.heroBody}`}>
                 <div className={styles.img}></div>

@@ -1,5 +1,5 @@
-.hero {
-    background: url('../assets/hero1c.png') no-repeat center 10%;
+.baecoin {
+    background: url('../assets/baecoin/baecoinbackground.png') no-repeat center 10%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
@@ -15,7 +15,7 @@
     gap: 1rem; */
 }
 
-.hero .heroBody {
+.baecoin .baecoinBody {
     height: 75vh;
     width: 40vw;
     display: flex;
@@ -28,14 +28,14 @@
     transform: translate(10vw, -7vh); */
 }
 
-.hero .heroBody .img {
+.baecoin .baecoinBody .img {
     width: 50%;
     height: 50%;
-    background: url('../assets/whoruns.png') no-repeat center;
+    background: url('../assets/baecoin/baecoin.png') no-repeat center;
     background-size: contain;
 }
 
-.hero .heroBody h3 {
+.baecoin .baecoinBody h3 {
     /* flex-direction: column; */
     width: 50%;
     align-content: center;
@@ -43,7 +43,7 @@
     font-size: 1.2rem;
 }
 
-.hero .heroBody .buttons {
+.baecoin .baecoinBody .buttons {
     /* flex-direction: column; */
     width: 50%;
     display: flex;

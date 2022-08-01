@@ -4,9 +4,14 @@
     list-style: none;
     gap: 0.5rem;
     display: flex;
+    justify-content: flex-end;
 }
 
 .smlinks li {
     padding: 0 0.3vw;
     color: white;
+}
+
+.small {
+    justify-content: center!important;
 }

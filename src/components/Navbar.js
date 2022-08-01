@@ -4,7 +4,10 @@ import menu from '../assets/social/menu.svg'
 const Navbar = () => {
 
     return (
-        <nav className={`${styles.nav} col-1 justify-content-end`}>
+        <nav 
+            className={`${styles.nav} col-1 justify-content-end`}
+            onClick={()=>console.log("lol")}
+        >
             <img src={menu} alt="menu"></img>
         </nav>
     )

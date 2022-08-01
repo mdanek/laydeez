@@ -1,0 +1,9 @@
+.menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu ul {
+    list-style: none;
+}

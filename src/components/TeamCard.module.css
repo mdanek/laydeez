@@ -1,0 +1,32 @@
+.card {
+    background-color: rgb(80, 232, 0);
+    border-radius: 10px;
+    padding: 2vh 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 25vh;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: arial;
+}
+
+.card span {
+    font-size: 1rem;
+}
+
+* {
+    text-align: center;
+}
+
+.avatar {
+    height: 20vh;
+    object-fit: cover;
+    position: absolute;
+    top: -13vh;
+    left: -14vw;
+}

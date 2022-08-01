@@ -1,21 +1,15 @@
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import SmLinks from "./SmLinks";
 import styles from './TeamCard.module.css';
 
 const TeamCard = ({member}) => {
-
+    const small = true;
+    
     return (
-        <div>
-            <Card style={{ width: '10rem' }}>
-                <Card.Img variant="top" src={member.avatar} className={styles.cardImg} />
-                <Card.Body>
-                    <Card.Title>{member.name}</Card.Title>
-                    <Card.Text>
-                        {member.role}
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
+        <div className={styles.card}>
+            <img src={member.avatar} className={styles.avatar} alt={member.name}></img>
+            <h3 className={styles.name}>{member.name}</h3>
+            <span className={styles.role}>{member.role}</span>
+            <SmLinks small={small} smlinks={member.smlinks}></SmLinks>
         </div>
     )
 }

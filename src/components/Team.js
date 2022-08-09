@@ -262,7 +262,7 @@ const Team = ({ handleToggleMenu }) => {
                 <div className={styles.aboutus}>
                     <h2><span style={{ color: 'rgb(249, 97, 195)' }}>About </span>
                     <span style={{ color: 'rgb(255, 241, 124)' }}>Us</span></h2>
-                    <p><span style={{ color: 'rgb(249, 97, 195)' }}>Lorem ipsum</span> <span style={{ color: 'rgb(255, 241, 124)' }}>dolor sit</span> amet, consectetur adipiscing elit. Sed dapibus feugiat ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam risus ipsum, commodo tempor vhicula id, posuere id dui. Nam gravida feugiat leo, id tincidunt ligula malesuada et. Donec volutpat sem nec condimentum placerat.</p>
+                    <p><span style={{ color: 'rgb(249, 97, 195)' }}>Lorem ipsum</span> <span style={{ color: 'rgb(255, 241, 124)' }}>dolor sit</span> amet, consectetur adipiscing elit. Sed dapibus feugiat ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam risus ipsum, commodo tempor vhicula id, posuere id dui.</p>
                 </div>
                 <Carousel 
                     className={styles.cards}

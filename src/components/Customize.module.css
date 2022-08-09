@@ -1,5 +1,5 @@
-.hero {
-    background: url('../assets/hero1d.jpg') no-repeat center 10%;
+.customize {
+    background: url('../assets/customize/custom1a.jpg') no-repeat center 10%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
@@ -15,7 +15,7 @@
     gap: 1rem; */
 }
 
-.hero .heroBody {
+.customize .customizeBody {
     height: 82vh;
     width: 40vw;
     display: flex;
@@ -28,14 +28,14 @@
     transform: translate(10vw, -7vh); */
 }
 
-.hero .heroBody .img {
+.customize .customizeBody .img {
     width: 50%;
     height: 50%;
-    background: url('../assets/whoruns1a.png') no-repeat center;
+    background: url('../assets/customize/customlaydeez1a.png') no-repeat center;
     background-size: contain;
 }
 
-.hero .heroBody h3 {
+.customize .customizeBody h3 {
     /* flex-direction: column; */
     width: 50%;
     align-content: center;
@@ -44,7 +44,7 @@
     letter-spacing: 0.03rem;
 }
 
-.hero .heroBody .buttons {
+.customize .customizeBody .buttons {
     /* flex-direction: column; */
     width: 50%;
     display: flex;

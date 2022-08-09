@@ -1,5 +1,5 @@
 .arready {
-    background: url('../assets/arready/arbackground.png') no-repeat center 10%;
+    background: url('../assets/arready/arbackground1a.jpg') no-repeat center 10%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
@@ -16,7 +16,7 @@
 }
 
 .arready .arreadyBody {
-    height: 75vh;
+    height: 82vh;
     width: 40vw;
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@
 
 .arready .arreadyBody .img {
     width: 50%;
-    height: 30%;
+    height: 50%;
     background: url('../assets/arready/arready.png') no-repeat center;
     background-size: contain;
 }
@@ -40,8 +40,8 @@
     width: 50%;
     align-content: center;
     font-weight: bold;
-    font-size: 1.2rem;
-    padding-bottom: 3rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.03rem;
 }
 
 .arready .arreadyBody .buttons {

@@ -1,5 +1,5 @@
 .team {
-    background: url('../assets/team/teamback.png') no-repeat center 10%;
+    background: url('../assets/team/teamback1a.jpg') no-repeat center 10%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
@@ -34,16 +34,20 @@
     background: rgb(73, 79, 157);
     margin: 0;
     padding: 2vw;
-    font-size: 2rem;
-    font-weight: bolder;
+    font-size: 2.2rem;
+    font-weight: 900;
     border-radius: 10px 0 0 10px;
     text-transform: uppercase;
+    text-align: left;
 }
 
 .aboutus p {
     background: rgba(73, 79, 157, 0.5);
     margin: 0;
     padding: 2vw;
+    font-size: 1.1rem;
+    letter-spacing: 0.02rem;
+    text-align: justify;
     border-radius: 0 10px 10px 0;
 }
 

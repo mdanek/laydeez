@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/laydeez/static/css/main.79d19715.css",
-    "main.js": "/laydeez/static/js/main.fc491ee9.js",
+    "main.js": "/laydeez/static/js/main.eb6c1d7a.js",
     "static/js/787.466ea8cc.chunk.js": "/laydeez/static/js/787.466ea8cc.chunk.js",
     "static/media/bootstrap-icons.woff?": "/laydeez/static/media/bootstrap-icons.7ff3ca6fa798de3f8ac2.woff",
     "static/media/hero1d.jpg": "/laydeez/static/media/hero1d.12552d674720ca8afb42.jpg",
@@ -35,11 +35,11 @@
     "static/media/facebook.svg": "/laydeez/static/media/facebook.734efc0db93903931fdf2f22eaed33ec.svg",
     "static/media/menu.svg": "/laydeez/static/media/menu.68a08bc2c19ad4dad03a93969c017a5c.svg",
     "main.79d19715.css.map": "/laydeez/static/css/main.79d19715.css.map",
-    "main.fc491ee9.js.map": "/laydeez/static/js/main.fc491ee9.js.map",
+    "main.eb6c1d7a.js.map": "/laydeez/static/js/main.eb6c1d7a.js.map",
     "787.466ea8cc.chunk.js.map": "/laydeez/static/js/787.466ea8cc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.79d19715.css",
-    "static/js/main.fc491ee9.js"
+    "static/js/main.eb6c1d7a.js"
   ]
 }

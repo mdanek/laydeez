@@ -1,12 +1,12 @@
 import styles from './Navbar.module.css';
 import menu from '../assets/social/menu.svg'
 
-const Navbar = () => {
+const Navbar = ({ handleToggleMenu }) => {
 
     return (
         <nav 
             className={`${styles.nav} col-1 justify-content-end`}
-            onClick={()=>console.log("lol")}
+            onClick={handleToggleMenu}
         >
             <img src={menu} alt="menu"></img>
         </nav>

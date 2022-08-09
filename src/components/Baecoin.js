@@ -17,11 +17,11 @@ const openseaBtn = {
     img: opensea
 };
 
-const Baecoin = () => {
+const Baecoin = ({ handleToggleMenu }) => {
 
     return (
-        <div id="#baecoin" className={`${styles.baecoin} d-flex flex-wrap`}>
-            <Header></Header>
+        <div id="baecoin" className={`${styles.baecoin} d-flex flex-wrap`}>
+            <Header handleToggleMenu={handleToggleMenu}></Header>
             <div className={`${styles.baecoinBody}`}>
                 <div className={styles.img}></div>
                 <h3><span style={{ color: 'rgb(249, 97, 195)' }}>Laydeez</span> <span style={{ color: 'rgb(255, 241, 124)' }}>NFT</span> is a project that is AR ready to go and is exciting and fun!</h3>

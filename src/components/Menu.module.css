@@ -1,9 +1,43 @@
-.menu {
+.navBar {
     position: absolute;
-    right: 0;
-    top: 0;
+    /* right: 0;
+    top: 0; */
+    width: 20vw;
+    font-size: 2.2rem;
+    letter-spacing: .2rem;
+    font-weight: bold;
 }
 
-.menu ul {
+.navBarHidden {
+    display: none;
+}
+
+.menuList {
     list-style: none;
+}
+
+.menuList li a {
+    color: rgba(255, 255, 255, 0.7);    
+}
+
+.menuList li a:hover,
+.menuList li a:active {
+    color: rgba(255, 255, 255, 1);    
+}
+
+.imgClose {
+    background: url('../assets/close.png') no-repeat center;
+    background-size: cover;
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.displayNone {
+    display: none;
 }

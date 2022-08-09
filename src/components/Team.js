@@ -253,11 +253,11 @@ const responsive = {
     }
   };
 
-const Team = () => {
+const Team = ({ handleToggleMenu }) => {
 
     return (
-        <div className={styles.team}>
-            <Header />
+        <div id="team" className={styles.team}>
+            <Header handleToggleMenu={handleToggleMenu}/>
             <img className={styles.teamheader} src={teamheader} alt="Laydeez Team"></img>
                 <div className={styles.aboutus}>
                     <h2><span style={{ color: 'rgb(249, 97, 195)' }}>About </span>
@@ -276,18 +276,6 @@ const Team = () => {
                             {teamobj.map((member, index) => 
                             (<TeamCard key={index} member={member} />))}
                 </Carousel>
-                {/* <Carousel>
-                    <Carousel.Item>
-                        <Stack
-                            direction="horizontal"
-                            className="h-100 justify-content-center align-items-center"
-                            gap={3}
-                            >
-                            {teamobj.map((member, index) => 
-                            (<TeamCard key={index} member={member} />))}
-                        </Stack>
-                    </Carousel.Item>
-                </Carousel> */}
         </div>
     )
 }

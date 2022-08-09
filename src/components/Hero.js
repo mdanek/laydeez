@@ -5,6 +5,7 @@ import mintnow from '../assets/mintnow.png';
 import opensea from '../assets/opensea.png';
 import Header from "./Header"
 import styles from './Hero.module.css';
+import { propTypes } from 'react-bootstrap/esm/Image';
 
 const mintnowBtn = {
     text: "Mint Now",
@@ -17,11 +18,11 @@ const openseaBtn = {
     img: opensea
 };
 
-const Hero = () => {
+const Hero = ({ handleToggleMenu }) => {
 
     return (
         <div id="hero" className={`${styles.hero} d-flex flex-wrap`}>
-            <Header></Header>
+            <Header handleToggleMenu={handleToggleMenu}></Header>
             <div className={`${styles.heroBody}`}>
                 <div className={styles.img}></div>
                 <h3><span style={{ color: 'rgb(249, 97, 195)' }}>Laydeez</span> <span style={{ color: 'rgb(255, 241, 124)' }}>NFT</span> is a project led by women team. We look to give to empower women.</h3>

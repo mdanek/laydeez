@@ -30,14 +30,14 @@ const smlinksobj = [
     }
 ]
 
-const Header = () => {
+const Header = ({ handleToggleMenu }) => {
 
     return (
         <header className={`${styles.header} row m-0 p-3 col-12`}>
             <Logo></Logo>
             <div className={`${styles.rightSide} col-10 row`}>
                 <SmLinks smlinks={smlinksobj}></SmLinks>
-                <Navbar></Navbar>
+                <Navbar handleToggleMenu={handleToggleMenu}></Navbar>
             </div>
         </header>
     )

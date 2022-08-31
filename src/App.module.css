@@ -22,7 +22,7 @@
 }
 
 .closeMenu {
-    transform: scale(1);
+    /* transform: scale(1); */
     transition: 0.2s;
 }
 
@@ -30,9 +30,61 @@
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    overflow-y: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    position: relative;
 }
+
+.test {
+    background: url('assets/transition1.png') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    /* display: none; */
+    width: calc(100vw + calc(40*var(--step-4)));
+    height: calc(100vw + calc(40*var(--step-4)));
+    top: 200vh;
+    left: -300vw;
+}
+
+.testActive {
+    /* animation-duration: 10.5s;
+    animation-name: slidein;
+    animation-fill-mode: none; */
+    display: block;
+    transform: translate(500vw, -500vw);
+    transition: 5s;
+}
+  
+/* @keyframes slidein {
+    0% {
+      margin-left: -100vw;
+      bottom: -100wh;
+    }
+
+    100% {
+      margin-left: 0vw;
+      bottom: 100vh;
+    }
+} */
+
+/* .test {
+    transition: 0.3s;
+    width: 4000px;
+    height: 4000px;
+    background: url('assets/transition1.png') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    bottom: -560vh;
+    left: -200vw;
+    display: none;
+}
+
+.testActive {
+    transform: translate(3000px, -4500px);
+    transition: 1.5s;
+    display: block;
+} */
 
 .page {
     display: grid;
@@ -42,8 +94,24 @@
     height: 100%;
 }
 
-@media (max-width:700px) {
+@media (max-device-width: 700px) {
     .page {
         grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .test {
+        width: calc(200vw + calc(40*var(--step-4)));
+        height: calc(200vw + calc(40*var(--step-4)));
+        left: -500vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .test {
+        width: calc(100vw + calc(50*var(--step-4)));
+        height: calc(100vw + calc(50*var(--step-4)));
+        left: -550vw;
     }
 }

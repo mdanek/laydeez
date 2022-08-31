@@ -9,7 +9,7 @@
 
 .smlink li img {
     filter: invert(1);
-    width: 2vw;
+    width: var(--step-1);
 }
 
 .small {

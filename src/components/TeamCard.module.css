@@ -1,3 +1,7 @@
+* {
+    text-align: center;
+}
+
 .card {
     background-color: rgb(80, 232, 0);
     border-radius: 10px;
@@ -23,14 +27,10 @@
     padding-bottom: 2vh;
 }
 
-* {
-    text-align: center;
-}
-
 .avatar {
     height: 20vh;
     object-fit: cover;
     position: absolute;
-    top: -13vh;
-    left: -14vw;
+    top: -50%;
+    left: 27%;
 }

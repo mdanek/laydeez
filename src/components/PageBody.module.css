@@ -1,0 +1,26 @@
+.pageBody {
+    height: 100vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--step-5);
+    align-content: space-between;
+    gap: var(--step-2);
+    padding-bottom: 15vh;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
+.pageBody .img {
+    height: calc(20vh + var(--step-5));
+    object-fit: contain;
+    width: 50%;
+}
+
+.pageBody h3 {
+    width: 75%;
+    text-align: left;
+    font-weight: bold;
+    font-size: var(--step-0);
+    letter-spacing: 0.03rem;
+}

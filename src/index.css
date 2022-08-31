@@ -10,6 +10,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root {
+  font-size: 16px;
+  --step--2: clamp(0.59rem, calc(0.52rem + 0.35vw), 0.77rem);
+  --step--1: clamp(0.67rem, calc(0.52rem + 0.71vw), 1.03rem);
+  --step-0: clamp(0.75rem, calc(0.51rem + 1.22vw), 1.38rem);
+  --step-1: clamp(0.84rem, calc(0.46rem + 1.93vw), 1.83rem);
+  --step-2: clamp(0.95rem, calc(0.37rem + 2.91vw), 2.44rem);
+  --step-3: clamp(1.07rem, calc(0.21rem + 4.27vw), 3.26rem);
+  --step-4: clamp(1.20rem, calc(-0.02rem + 6.13vw), 4.34rem);
+  --step-5: clamp(1.35rem, calc(-0.38rem + 8.65vw), 5.79rem);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

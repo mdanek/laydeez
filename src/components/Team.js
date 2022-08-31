@@ -256,7 +256,7 @@ const responsive = {
 const Team = ({ handleToggleMenu }) => {
 
     return (
-        <div id="team" className={styles.team}>
+        <div id="team" className={`${styles.team} page`}>
             <Header handleToggleMenu={handleToggleMenu}/>
             <img className={styles.teamheader} src={teamheader} alt="Laydeez Team"></img>
                 <div className={styles.aboutus}>

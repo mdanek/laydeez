@@ -1,7 +1,6 @@
 .button { 
     display: flex;
-    height: 7.5vh;
-    width: 10.5vw;
+    height: var(--step-3);
     text-decoration: none;
 }
 

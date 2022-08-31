@@ -1,8 +1,9 @@
-
-import Button from './Button';
+import customizevideo from '../assets/customize/customizevideo.mp4';
+import customizeimage from '../assets/customize/customlaydeez1a.png';
 import earnnow from '../assets/customize/earnnow.png';
 import opensea from '../assets/customize/opensea.png';
-import Header from "./Header"
+import Header from './Header';
+import PageBody from './PageBody';
 import styles from './Customize.module.css';
 
 const earnnowBtn = {
@@ -16,19 +17,15 @@ const openseaBtn = {
     img: opensea
 };
 
+const h3String = "<span style='color: rgb(249, 97, 195)'>Laydeez</span> are customizable by using BAE Coin to buy alternate outfits.";
+
 const Customize = ({ handleToggleMenu }) => {
 
     return (
-        <div id="customize" className={`${styles.customize} d-flex flex-wrap`}>
+        <div id="customize" className={`${styles.customize} page d-flex flex-wrap`}>
+            <video className={styles.customizevideo} src={customizevideo} autoPlay loop muted />
             <Header handleToggleMenu={handleToggleMenu}></Header>
-            <div className={`${styles.customizeBody}`}>
-                <div className={styles.img}></div>
-                <h3><span style={{ color: 'rgb(249, 97, 195)' }}>Laydeez</span> are customizable by using BAE Coin to buy alternate outfits.</h3>
-                <div className={styles.buttons}>
-                    <Button button={earnnowBtn}></Button>
-                    <Button button={openseaBtn}></Button>
-                </div>
-            </div>
+            <PageBody img={customizeimage} h3String={h3String} buttons={[earnnowBtn, openseaBtn]}></PageBody>
         </div>
     )
 }

@@ -1,9 +1,9 @@
-
-import Button from './Button';
+import arreadyvideo from '../assets/arready/arreadyvideo.mp4';
 import arready from '../assets/arready/arready.png';
 import learnmore from '../assets/arready/learnmore.png';
 import opensea from '../assets/arready/opensea.png';
-import Header from "./Header"
+import Header from './Header';
+import PageBody from './PageBody';
 import styles from './Arready.module.css';
 
 const learnmoreBtn = {
@@ -17,19 +17,15 @@ const openseaBtn = {
     img: opensea
 };
 
+const h3String = "<span style='color: rgb(249, 97, 195)'>Laydeez</span> <span style='color: rgb(255, 241, 124)'>NFT</span> is a project that is AR ready to go and is exciting and fun!";
+
 const Arready = ({ handleToggleMenu }) => {
 
     return (
-        <div id="arready" className={`${styles.arready} d-flex flex-wrap`}>
+        <div id="arready" className={`${styles.arready} page d-flex flex-wrap`}>
+            <video className={styles.arreadyvideo} src={arreadyvideo} autoPlay loop muted />
             <Header handleToggleMenu={handleToggleMenu}></Header>
-            <div className={`${styles.arreadyBody}`}>
-                <div className={styles.img}></div>
-                <h3><span style={{ color: 'rgb(249, 97, 195)' }}>Laydeez</span> <span style={{ color: 'rgb(255, 241, 124)' }}>NFT</span> is a project that is AR ready to go and is exciting and fun!</h3>
-                <div className={styles.buttons}>
-                    <Button button={learnmoreBtn}></Button>
-                    <Button button={openseaBtn}></Button>
-                </div>
-            </div>
+            <PageBody img={arready} h3String={h3String} buttons={[learnmoreBtn, openseaBtn]}></PageBody>
         </div>
     )
 }

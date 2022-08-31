@@ -1,9 +1,10 @@
-
-import Button from './Button';
+import twothreedimage from '../assets/twodthreed/twodthreedlaydeez1a.png';
+import twodthreedvideo from '../assets/twodthreed/twodthreedvideo.mp4';
 import earnnow from '../assets/twodthreed/earnnow.png';
 import opensea from '../assets/twodthreed/opensea.png';
-import Header from "./Header"
+import PageBody from './PageBody';
 import styles from './Twodthreed.module.css';
+import Header from './Header';
 
 const earnnowBtn = {
     text: "Earn Now",
@@ -16,19 +17,15 @@ const openseaBtn = {
     img: opensea
 };
 
+const h3String = "<span style='color: rgb(249, 97, 195)'>Laydeez</span> are not only 2D but have 3D versions that come along for free!";
+
 const Twodthreed = ({ handleToggleMenu }) => {
 
     return (
-        <div id="twodthreed" className={`${styles.twodthreed} d-flex flex-wrap`}>
+        <div id="twodthreed" className={`${styles.twodthreed} page d-flex flex-wrap`}>
+            <video className={styles.twodthreedvideo} src={twodthreedvideo} autoPlay loop muted />
             <Header handleToggleMenu={handleToggleMenu}></Header>
-            <div className={`${styles.twodthreedBody}`}>
-                <div className={styles.img}></div>
-                <h3><span style={{ color: 'rgb(249, 97, 195)' }}>Laydeez</span> are not only 2D but have 3D versions that come along for free!</h3>
-                <div className={styles.buttons}>
-                    <Button button={earnnowBtn}></Button>
-                    <Button button={openseaBtn}></Button>
-                </div>
-            </div>
+            <PageBody img={twothreedimage} h3String={h3String} buttons={[earnnowBtn, openseaBtn]}></PageBody>
         </div>
     )
 }

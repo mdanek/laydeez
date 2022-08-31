@@ -1,9 +1,9 @@
-
-import Button from './Button';
+import baecoinvideo from '../assets/baecoin/baecoinvideo.mp4';
 import baecoin from '../assets/baecoin/baecoin.png';
 import earnnow from '../assets/baecoin/earnnow.png';
 import opensea from '../assets/baecoin/opensea.png';
-import Header from "./Header"
+import Header from './Header';
+import PageBody from './PageBody';
 import styles from './Baecoin.module.css';
 
 const earnnowBtn = {
@@ -17,19 +17,15 @@ const openseaBtn = {
     img: opensea
 };
 
+const h3String = "<span style='color: rgb(249, 97, 195)'>Laydeez</span> <span style='color: rgb(255, 241, 124)'>NFT</span> is a project that is AR ready to go and is exciting and fun!";
+
 const Baecoin = ({ handleToggleMenu }) => {
 
     return (
-        <div id="baecoin" className={`${styles.baecoin} d-flex flex-wrap`}>
+        <div id="baecoin" className={`${styles.baecoin} page d-flex flex-wrap`}>
+            <video className={styles.baecoinvideo} src={baecoinvideo} autoPlay loop muted />
             <Header handleToggleMenu={handleToggleMenu}></Header>
-            <div className={`${styles.baecoinBody}`}>
-                <div className={styles.img}></div>
-                <h3><span style={{ color: 'rgb(249, 97, 195)' }}>Laydeez</span> <span style={{ color: 'rgb(255, 241, 124)' }}>NFT</span> is a project that is AR ready to go and is exciting and fun!</h3>
-                <div className={styles.buttons}>
-                    <Button button={earnnowBtn}></Button>
-                    <Button button={openseaBtn}></Button>
-                </div>
-            </div>
+            <PageBody img={baecoin} h3String={h3String} buttons={[earnnowBtn, openseaBtn]}></PageBody>
         </div>
     )
 }

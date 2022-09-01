@@ -72,7 +72,9 @@ useEffect(() => {
     threshold: 0
   });
   pages.forEach(page => {
-    observer.observe(page);
+    if(page.id!=="home") {
+      observer.observe(page);
+    }
   });
 }, [])
 
@@ -84,7 +86,6 @@ useEffect(() => {
         {/* <Header handleToggleMenu={handleToggleMenu}></Header> */}
         
         <div ref={pagesContainer} className={styles.page}>
-        
           <Home handleToggleMenu={handleToggleMenu}></Home>
           <Team handleToggleMenu={handleToggleMenu}></Team>
           <Twodthreed handleToggleMenu={handleToggleMenu}></Twodthreed>

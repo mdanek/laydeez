@@ -74,3 +74,15 @@
     position: relative;
     z-index: 5;
 }
+
+@media only screen and (max-width: 600px) {
+    .teamheader {
+        height: 6vh;
+    }
+    .aboutus h2 {
+        font-size: 1.5rem;
+    }
+    .aboutus p {
+        font-size: 0.8rem;
+    }
+}

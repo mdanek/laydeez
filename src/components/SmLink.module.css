@@ -16,3 +16,15 @@
     width: 1.2vw!important;
     filter: invert(63%) sepia(40%) saturate(4324%) hue-rotate(183deg) brightness(98%) contrast(97%) !important;
 }
+
+@media only screen and (max-width: 600px) {
+    .small {
+        width: 2vw!important;
+    }
+}
+
+@media only screen and (min-width: 2500px) {
+    .smlink li img {
+        width: calc(1vw + var(--step-1));
+    }
+}

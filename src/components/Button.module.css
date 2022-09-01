@@ -1,6 +1,6 @@
 .button { 
     display: flex;
-    height: var(--step-3);
+    height: calc( 2rem + var(--step-2));
     text-decoration: none;
 }
 
@@ -24,4 +24,10 @@
     font-family: Arial;
     font-weight: bolder;
     letter-spacing: 0.1rem;
+}
+
+@media only screen and (min-width: 2500px) {
+    .button { 
+        height: calc( 4rem + var(--step-2));
+    }
 }

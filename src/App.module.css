@@ -60,36 +60,6 @@
     transition: 2s;
     transition-timing-function: ease-out;
 }
-  
-/* @keyframes slidein {
-    0% {
-      margin-left: -100vw;
-      bottom: -100wh;
-    }
-
-    100% {
-      margin-left: 0vw;
-      bottom: 100vh;
-    }
-} */
-
-/* .test {
-    transition: 0.3s;
-    width: 4000px;
-    height: 4000px;
-    background: url('assets/transition1.png') no-repeat center;
-    background-size: contain;
-    position: absolute;
-    bottom: -560vh;
-    left: -200vw;
-    display: none;
-}
-
-.testActive {
-    transform: translate(3000px, -4500px);
-    transition: 1.5s;
-    display: block;
-} */
 
 .page {
     display: grid;

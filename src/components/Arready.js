@@ -1,5 +1,5 @@
 import arreadyvideo from '../assets/arready/arreadyvideo.mp4';
-import arready from '../assets/arready/arready.png';
+import arready from '../assets/arready/arready1.png';
 import learnmore from '../assets/arready/learnmore.png';
 import opensea from '../assets/arready/opensea.png';
 import Header from './Header';

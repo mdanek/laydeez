@@ -6,7 +6,7 @@ const Menu = ({ toggleMenu, handleToggleMenu }) => {
     return (
         <div className={toggleMenu ? styles.navBar : styles.navBarHidden}>
             <ul className={styles.menuList}>
-                <li><a href="#hero">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#twodthreed">2D + 3D</a></li>
                 <li><a href="#arready">AR Ready</a></li>

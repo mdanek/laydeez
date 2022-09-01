@@ -43,7 +43,6 @@ function App() {
     if (toggleMenu) {
       handleToggleMenu();
     }
-    // handleAnimation();
   }
 
   const handleAnimation = () => {
@@ -59,9 +58,9 @@ useEffect(() => {
   const rainbow = animationContainer;
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      if (entry.isIntersecting && !rainbow.current.classList.contains(styles.testActive)) {
+      if (entry.isIntersecting && !rainbow.current.classList.contains(styles.testActive) && scrollContainer.current.classList.contains(styles.closeMenu)) {
         rainbow.current.classList.add(styles.testActive);
-        // console.log("contains: ", rainbow.current.classList.contains(styles.testActive));
+        // console.log("contains: ", scrollContainer.current.classList.contains(styles.closeMenu));
         return
       }
       setTimeout(() => {

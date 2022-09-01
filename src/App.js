@@ -9,6 +9,7 @@ import Baecoin from './components/Baecoin';
 import Customize from './components/Customize';
 import styles from './App.module.css';
 import './App.css';
+import rainbowimg from './assets/transition3.png';
 
 // const scrollContainer = () => document.getElementsByClassName("container-fluid")[0];
 // console.log(scrollContainer());
@@ -42,56 +43,49 @@ function App() {
     if (toggleMenu) {
       handleToggleMenu();
     }
+    // handleAnimation();
   }
 
   const handleAnimation = () => {
     setIsActive(m => !m);
-    console.log("active is" + isActive);
+    // console.log("active is" + isActive);
   }
 
 const pagesContainer = useRef(null);
 const animationContainer = useRef(null);
 
-// useEffect(() => {
-//   const pages = pagesContainer.current.querySelectorAll('.page');
-//   const rainbow = animationContainer;
-//   const observer = new IntersectionObserver(entries => {
-//     // console.log('entries', entries);
-//     entries.forEach(entry => {
-//       console.log(entry);
-//       if (!entry.isIntersecting) {
-//         rainbow.current.classList.add(styles.testActive);
-//         return;
-//       }
-
-//       rainbow.current.classList.remove(styles.testActive);
-//     });
-//   });
-//   pages.forEach(page => {
-//     observer.observe(page);
-//     // console.log(page);
-//   });
-// }, [])
-// const rainbow = animationContainer;
-// // rainbow.classList.remove(styles.testActive);
-
-
-
-// observer.observe(pageContainer);
-
-  // useEffect(() => {
-  //   scrollContainer.current.scrollLeft += 100;
-  // }, [scrollContainer]);
-  
-    // scrollContainer.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+useEffect(() => {
+  const pages = pagesContainer.current.querySelectorAll('.page');
+  const rainbow = animationContainer;
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !rainbow.current.classList.contains(styles.testActive)) {
+        rainbow.current.classList.add(styles.testActive);
+        // console.log("contains: ", rainbow.current.classList.contains(styles.testActive));
+        return
+      }
+      setTimeout(() => {
+        rainbow.current.classList.remove(styles.testActive);
+      }, 2000);
+    });
+  }, {
+    rootMargin: "0px -50px 0px",
+    threshold: 0
+  });
+  pages.forEach(page => {
+    observer.observe(page);
+  });
+}, [])
 
   return (
     <div className={`${styles.app}`}>
-      
+      <img ref={animationContainer} src={rainbowimg} className={`${styles.test}`}/>
       <div onClick={closeOnContainer} ref={scrollContainer} onWheel={reactToScrolling} className={`${styles.mycontainer} ${toggleMenu ? styles.openMenu : styles.closeMenu}`}>
         {/* <div className={styles.kwadrat}></div> */}
         {/* <Header handleToggleMenu={handleToggleMenu}></Header> */}
+        
         <div ref={pagesContainer} className={styles.page}>
+        
           <Home handleToggleMenu={handleToggleMenu}></Home>
           <Team handleToggleMenu={handleToggleMenu}></Team>
           <Twodthreed handleToggleMenu={handleToggleMenu}></Twodthreed>
@@ -99,7 +93,7 @@ const animationContainer = useRef(null);
           <Baecoin handleToggleMenu={handleToggleMenu}></Baecoin>
           <Customize handleToggleMenu={handleToggleMenu}></Customize>
         </div>
-        {/* <div ref={pageContainer} className={`${styles.test} ${isActive ? styles.testActive : ''}`}></div>   */}
+        {/* <img src={rainbowimg} className={`${styles.test} ${isActive ? styles.testActive : ''}`}/> */}
         {/* <div ref={animationContainer} className={`${styles.test}`}></div>  */}
       </div>
       <Menu toggleMenu={toggleMenu} handleToggleMenu={handleToggleMenu}></Menu>

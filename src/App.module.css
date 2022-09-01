@@ -9,7 +9,9 @@
     justify-content: flex-end;
     align-items: center;
     flex-direction: row;
-
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .openMenu {
@@ -37,14 +39,16 @@
 }
 
 .test {
-    background: url('assets/transition1.png') no-repeat center;
-    background-size: contain;
+    /* background: url('assets/transition1.png') no-repeat center;
+    background-size: contain; */
+    object-fit: contain;
     position: absolute;
     /* display: none; */
     width: calc(100vw + calc(40*var(--step-4)));
     height: calc(100vw + calc(40*var(--step-4)));
     top: 200vh;
     left: -300vw;
+    z-index: 10;
 }
 
 .testActive {
@@ -53,7 +57,8 @@
     animation-fill-mode: none; */
     display: block;
     transform: translate(500vw, -500vw);
-    transition: 5s;
+    transition: 2s;
+    transition-timing-function: ease-out;
 }
   
 /* @keyframes slidein {
@@ -104,14 +109,16 @@
     .test {
         width: calc(200vw + calc(40*var(--step-4)));
         height: calc(200vw + calc(40*var(--step-4)));
-        left: -500vw;
+        left: -450vw;
+        top: 100vh;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .test {
-        width: calc(100vw + calc(50*var(--step-4)));
-        height: calc(100vw + calc(50*var(--step-4)));
-        left: -550vw;
+        width: calc(120vw + calc(50*var(--step-4)));
+        height: calc(120vw + calc(50*var(--step-4)));
+        left: -450vw;
+        top: 100vh;
     }
 }

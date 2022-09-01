@@ -5,6 +5,7 @@ import opensea from '../assets/home/opensea.png';
 import Header from './Header';
 import PageBody from './PageBody';
 import styles from './Home.module.css';
+import Rainbow from './Rainbow';
 
 const mintnowBtn = {
     text: "Mint Now",
@@ -19,10 +20,11 @@ const openseaBtn = {
 
 const h3String = "<span style='color: rgb(249, 97, 195)'>Laydeez</span> <span style='color: rgb(255, 241, 124)'>NFT</span> is a project led by women team. We look to give to empower women.";
 
-const Home = ({ handleToggleMenu }) => {
+const Home = ({ active, handleToggleMenu }) => {
 
     return (
         <div id="home" className={`${styles.home} page d-flex flex-wrap`}>
+            {/* <Rainbow active={active}></Rainbow> */}
             <video className={styles.homevideo} src={homevideo} autoPlay loop muted />
             <Header handleToggleMenu={handleToggleMenu}></Header>
             <PageBody img={whoruns} h3String={h3String} buttons={[mintnowBtn, openseaBtn]}></PageBody>

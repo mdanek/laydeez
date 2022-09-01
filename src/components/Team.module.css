@@ -13,6 +13,7 @@
     scroll-snap-align: start;
     align-items: flex-end;
     /* align-content: space-between; */
+    position: relative;
 
 }
 

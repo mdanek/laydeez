@@ -10,6 +10,7 @@ import twitter from '../assets/social/twitter.svg';
 import instagram from '../assets/social/instagram.svg';
 import discord from '../assets/social/discord.svg';
 import styles from './Team.module.css';
+import Rainbow from './Rainbow';
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -253,10 +254,11 @@ const responsive = {
     }
   };
 
-const Team = ({ handleToggleMenu }) => {
+const Team = ({ active, handleToggleMenu }) => {
 
     return (
         <div id="team" className={`${styles.team} page`}>
+            {/* <Rainbow active={active}></Rainbow> */}
             <Header handleToggleMenu={handleToggleMenu}/>
             <img className={styles.teamheader} src={teamheader} alt="Laydeez Team"></img>
                 <div className={styles.aboutus}>

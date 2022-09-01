@@ -9,6 +9,7 @@
     height: 100%;
     scroll-snap-align: start;
     align-content: space-between;
+    position: relative;
 }
 
 .homevideo {

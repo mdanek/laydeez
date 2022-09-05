@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/laydeez/static/css/main.94e24619.css",
-    "main.js": "/laydeez/static/js/main.35c84088.js",
+    "main.css": "/laydeez/static/css/main.946293e9.css",
+    "main.js": "/laydeez/static/js/main.5e5615f4.js",
     "static/js/787.466ea8cc.chunk.js": "/laydeez/static/js/787.466ea8cc.chunk.js",
     "static/media/homevideo.mp4": "/laydeez/static/media/homevideo.427e22bf3515736d79f3.mp4",
     "static/media/customizevideo.mp4": "/laydeez/static/media/customizevideo.8edb0fc77d145139cc1e.mp4",
@@ -40,12 +40,12 @@
     "index.html": "/laydeez/index.html",
     "static/media/facebook.svg": "/laydeez/static/media/facebook.734efc0db93903931fdf2f22eaed33ec.svg",
     "static/media/menu.svg": "/laydeez/static/media/menu.68a08bc2c19ad4dad03a93969c017a5c.svg",
-    "main.94e24619.css.map": "/laydeez/static/css/main.94e24619.css.map",
-    "main.35c84088.js.map": "/laydeez/static/js/main.35c84088.js.map",
+    "main.946293e9.css.map": "/laydeez/static/css/main.946293e9.css.map",
+    "main.5e5615f4.js.map": "/laydeez/static/js/main.5e5615f4.js.map",
     "787.466ea8cc.chunk.js.map": "/laydeez/static/js/787.466ea8cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.94e24619.css",
-    "static/js/main.35c84088.js"
+    "static/css/main.946293e9.css",
+    "static/js/main.5e5615f4.js"
   ]
 }

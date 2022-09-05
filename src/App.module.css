@@ -52,7 +52,7 @@
 }
 
 .rainbowOff {
-    display: none;
+    /* display: none; */
     width: 0;
     height: 0;
 }
@@ -82,7 +82,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .test {
+    .rainbow {
         width: calc(200vw + calc(40*var(--step-4)));
         height: calc(200vw + calc(40*var(--step-4)));
         left: -450vw;
@@ -91,7 +91,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .test {
+    .rainbow {
         width: calc(120vw + calc(50*var(--step-4)));
         height: calc(120vw + calc(50*var(--step-4)));
         left: -450vw;

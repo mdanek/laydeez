@@ -6,7 +6,7 @@
     padding-left: calc(5vw + var(--step-3));
     align-content: space-between;
     gap: calc(1rem + var(--step-1));
-    padding-bottom: calc(10vh + 2vw);
+    padding-bottom: calc(8vh + 2vw);
     justify-content: flex-end;
     z-index: 1;
 }
@@ -15,7 +15,7 @@
     height: calc(5rem + 12vw + var(--step-5));
     object-fit: contain;
     width: 80%;
-    padding-bottom: 2vw;
+    /* padding-bottom: 2vw; */
     padding-top: 2vw;
 }
 

@@ -38,7 +38,7 @@
     position: relative;
 }
 
-.test {
+.rainbow {
     /* background: url('assets/transition1.png') no-repeat center;
     background-size: contain; */
     object-fit: contain;
@@ -51,7 +51,13 @@
     z-index: 10;
 }
 
-.testActive {
+.rainbowOff {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.rainbowActive {
     /* animation-duration: 10.5s;
     animation-name: slidein;
     animation-fill-mode: none; */

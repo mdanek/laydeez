@@ -1,12 +1,17 @@
 {
   "files": {
-    "main.css": "/laydeez/static/css/main.3da09d15.css",
-    "main.js": "/laydeez/static/js/main.5e5615f4.js",
+    "main.css": "/laydeez/static/css/main.19402990.css",
+    "main.js": "/laydeez/static/js/main.9866b2ed.js",
     "static/js/787.466ea8cc.chunk.js": "/laydeez/static/js/787.466ea8cc.chunk.js",
     "static/media/homevideo.mp4": "/laydeez/static/media/homevideo.427e22bf3515736d79f3.mp4",
+    "static/media/homevideo-mob.mp4": "/laydeez/static/media/homevideo-mob.dd922c6881c14c06f361.mp4",
+    "static/media/customizevideo-mob.mp4": "/laydeez/static/media/customizevideo-mob.9115bfc8d1690ccba813.mp4",
     "static/media/customizevideo.mp4": "/laydeez/static/media/customizevideo.8edb0fc77d145139cc1e.mp4",
     "static/media/twodthreedvideo.mp4": "/laydeez/static/media/twodthreedvideo.4e552bb0237ffd31e898.mp4",
+    "static/media/twodthreedvideo-mob.mp4": "/laydeez/static/media/twodthreedvideo-mob.0b4dffc547aad2686642.mp4",
+    "static/media/arreadyvideo-mob.mp4": "/laydeez/static/media/arreadyvideo-mob.2fb300ae63101dd43d47.mp4",
     "static/media/arreadyvideo.mp4": "/laydeez/static/media/arreadyvideo.db928b85bc20cf32d699.mp4",
+    "static/media/baecoinvideo-mob.mp4": "/laydeez/static/media/baecoinvideo-mob.d6ae0dbd01c2c344ab26.mp4",
     "static/media/baecoinvideo.mp4": "/laydeez/static/media/baecoinvideo.178bec64a420ec7e7db2.mp4",
     "static/media/transition3.png": "/laydeez/static/media/transition3.68a432edfbe509152520.png",
     "static/media/custom1b.jpg": "/laydeez/static/media/custom1b.15952be3d60e620e3ab6.jpg",
@@ -14,15 +19,20 @@
     "static/media/arbackground1b.jpg": "/laydeez/static/media/arbackground1b.5773224bb6c3ae0dbd26.jpg",
     "static/media/baecoinbackground1b.jpg": "/laydeez/static/media/baecoinbackground1b.ae6612faad76cd5509cd.jpg",
     "static/media/bootstrap-icons.woff?": "/laydeez/static/media/bootstrap-icons.7ff3ca6fa798de3f8ac2.woff",
+    "static/media/custom1b-mob.jpg": "/laydeez/static/media/custom1b-mob.dde408ac1462a5245e81.jpg",
     "static/media/bootstrap-icons.woff2?": "/laydeez/static/media/bootstrap-icons.f2539a501be3a673de05.woff2",
     "static/media/arialr.ttf": "/laydeez/static/media/arialr.b54700609bfa6ca67bda.ttf",
+    "static/media/arbackground1b-mob.jpg": "/laydeez/static/media/arbackground1b-mob.e3d95e684304583cb363.jpg",
+    "static/media/baecoinbackground1b-mob.jpg": "/laydeez/static/media/baecoinbackground1b-mob.e7fa4a5fede3787c3915.jpg",
     "static/media/home1e.jpg": "/laydeez/static/media/home1e.ffd43da4507393cf92e7.jpg",
+    "static/media/twodthreed1b-mob.jpg": "/laydeez/static/media/twodthreed1b-mob.b7a671be822b9bfad882.jpg",
     "static/media/avatar1.png": "/laydeez/static/media/avatar1.2ecfe3510442cff33fd4.png",
     "static/media/laydeezlogowebmin.png": "/laydeez/static/media/laydeezlogowebmin.147c0cf933bf582284ef.png",
     "static/media/avatar2.png": "/laydeez/static/media/avatar2.428ba0d821e54eaa88c5.png",
     "static/media/avatar3.png": "/laydeez/static/media/avatar3.96cd8b73a98e336f4e38.png",
     "static/media/avatar4.png": "/laydeez/static/media/avatar4.4a78a80a59ae027917f2.png",
     "static/media/genty.ttf": "/laydeez/static/media/genty.f912bdc6360a3a8ad577.ttf",
+    "static/media/home1e-mob.jpg": "/laydeez/static/media/home1e-mob.bb0da8ac59c305214d45.jpg",
     "static/media/whoruns1a.png": "/laydeez/static/media/whoruns1a.278f69f20d15b8e300b0.png",
     "static/media/teamback1a.jpg": "/laydeez/static/media/teamback1a.8bc8429889fdc6526e96.jpg",
     "static/media/twodthreedlaydeez1d.png": "/laydeez/static/media/twodthreedlaydeez1d.a4a328ed486618663606.png",
@@ -40,12 +50,12 @@
     "index.html": "/laydeez/index.html",
     "static/media/facebook.svg": "/laydeez/static/media/facebook.734efc0db93903931fdf2f22eaed33ec.svg",
     "static/media/menu.svg": "/laydeez/static/media/menu.68a08bc2c19ad4dad03a93969c017a5c.svg",
-    "main.3da09d15.css.map": "/laydeez/static/css/main.3da09d15.css.map",
-    "main.5e5615f4.js.map": "/laydeez/static/js/main.5e5615f4.js.map",
+    "main.19402990.css.map": "/laydeez/static/css/main.19402990.css.map",
+    "main.9866b2ed.js.map": "/laydeez/static/js/main.9866b2ed.js.map",
     "787.466ea8cc.chunk.js.map": "/laydeez/static/js/787.466ea8cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3da09d15.css",
-    "static/js/main.5e5615f4.js"
+    "static/css/main.19402990.css",
+    "static/js/main.9866b2ed.js"
   ]
 }

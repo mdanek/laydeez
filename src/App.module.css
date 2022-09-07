@@ -47,7 +47,7 @@
     width: calc(100vw + calc(40*var(--step-4)));
     height: calc(100vw + calc(40*var(--step-4)));
     top: 200vh;
-    left: -300vw;
+    left: -350vw;
     z-index: 10;
 }
 
@@ -75,9 +75,30 @@
     height: 100%;
 }
 
-@media (max-device-width: 700px) {
-    .page {
-        grid-auto-flow: row;
+@media only screen and (min-width: 1600px) {
+    .rainbow {
+        width: calc(200vw + calc(40*var(--step-4)));
+        height: calc(200vw + calc(40*var(--step-4)));
+        left: -350vw;
+        top: 100vh;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .rainbow {
+        left: -300vw;
+    }
+}
+
+@media only screen and (min-width: 3000px) {
+    .rainbow {
+        left: -250vw;
+    }
+}
+
+@media only screen and (min-width: 4000px) {
+    .rainbow {
+        left: -200vw;
     }
 }
 
@@ -91,10 +112,20 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .page {
+        grid-auto-flow: row;
+    }
+    .openMenu {
+        transform: scale(0.5);
+    }
     .rainbow {
-        width: calc(120vw + calc(50*var(--step-4)));
-        height: calc(120vw + calc(50*var(--step-4)));
-        left: -450vw;
+        width: calc(200vw + calc(50*var(--step-4)));
+        height: calc(200vw + calc(50*var(--step-4)));
+        left: -550vw;
         top: 100vh;
+    }
+
+    .rainbowActive {
+        transform: translate(600vw, -600vw);
     }
 }

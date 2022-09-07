@@ -10,6 +10,9 @@
     scroll-snap-align: start;
     align-content: space-between;
     position: relative;
+    display: grid;
+    grid-template-columns: 7vw 0.8fr 1fr;
+    grid-template-rows: 15vh 1fr 4vh;
 }
 
 .twodthreedvideo {
@@ -17,4 +20,13 @@
     height: 100%;
     object-fit: cover;
     position: absolute;
+}
+
+@media only screen and (max-width: 600px) {
+    .twodthreed {
+        background: url('../assets/twodthreed/twodthreed1b-mob.jpg') no-repeat center 10%;
+        grid-template-columns: 3vw 1fr 3vw;
+        grid-template-rows: 5vh 1fr 4vh;
+        background-size: cover;
+    }
 }

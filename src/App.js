@@ -27,30 +27,28 @@ function App() {
 
   //Start ignoring unnecessary scroll events
   const startIgnoringEvents = (delay) => {
-    console.log("started ignoring events");
 
     setTimeout(() => {
       canScroll = true;
-      console.log("Events not ignored anymore. Timeout canScroll: ", canScroll)
     }, delay);
   }
 
   //Execute full page horizontal scroll with rainbow animation
-  const executeScroll = (event, canScroll, delay) => {
+  const executeScroll = (event, canScroll, delay, direction) => {
     let pageLeftSide = scrollContainer.current.scrollLeft;
     let pageRightSide = scrollContainer.current.scrollLeft + scrollContainer.current.offsetWidth;
     let fullContainerWidth = pagesContainer.current.offsetWidth;
 
-    //scroll right on mousewheel down after small timeout
-    if (event.deltaY > 0 && canScroll) {
+    //scroll right on mousewheel down or swipe right after small timeout
+    if (direction === "right" || event.deltaY > 0 && canScroll) {
       setTimeout(() => {
         scrollContainer.current.scrollLeft += (1 * scrollContainer.current.offsetWidth);
       }, delay/10);
       if(pageRightSide < fullContainerWidth) showRainbowAnimation(delay);
     }
 
-    //scroll left on mousewheel up after small timeout
-    if (event.deltaY < 0 && canScroll) {
+    //scroll left on mousewheel up or swipe left after small timeout
+    if (direction === "left" || event.deltaY < 0 && canScroll) {
       setTimeout(() => {
         scrollContainer.current.scrollLeft += (-1 * scrollContainer.current.offsetWidth);
       }, delay/10);
@@ -67,6 +65,41 @@ function App() {
     canScroll = false;
   }
 
+  //React to touch
+  let touchesArray = [];
+  let canTouch = true;
+  let direction = "";
+
+  const reactToTouchStart = () => {
+    canTouch = true;
+  }
+
+  const reactToTouchMove = (event) => {
+    if(touchesArray.length < 10 && canTouch) {
+      touchesArray.push(event.touches[0].clientX)
+    } else if(canTouch) {
+
+      if(canScroll) {
+        startIgnoringEvents(delay);
+        direction = checkTouchDirection(touchesArray);
+        executeScroll(event, canScroll, delay, direction)
+        touchesArray = [];
+      }
+      canScroll = false;
+      canTouch = false
+    }
+  }
+
+  const reactToTouchEnd = () => {
+    canTouch = true;
+  }
+
+  const checkTouchDirection = (arr) => {
+    if(arr[0] < arr[arr.length - 1]) {
+      return "left"
+    } else return "right";
+  }
+
   //Rainbow animation on slide transition section ----------------------------
   const animationContainer = useRef(null);
   
@@ -79,7 +112,6 @@ function App() {
         rainbow.current.classList.remove(styles.rainbowActive);
       }, delay);
     }
-    
   }
 
   //Hamburger menu section --------------------------------------------------
@@ -124,44 +156,24 @@ function App() {
     }
   }
 
-
-
-/* useEffect(() => {
-  const pages = pagesContainer.current.querySelectorAll('.page');
-  const rainbow = animationContainer;
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !rainbow.current.classList.contains(styles.testActive) && scrollContainer.current.classList.contains(styles.closeMenu)) {
-        rainbow.current.classList.add(styles.testActive);
-        return
-      }
-      setTimeout(() => {
-        rainbow.current.classList.remove(styles.testActive);
-      }, 2000);
-    });
-  }, {
-    rootMargin: "0px -50px 0px",
-    threshold: 0
-  });
-  pages.forEach(page => {
-    if(page.id!=="home") {
-      observer.observe(page);
-    }
-  });
-}, []) */
+  //Handle mobile/desktop version
+  let mobile = false;
+  if(window.innerWidth <= 600) {
+    mobile = true;
+  } else mobile = false;
 
 //Main app section -----------------------------------------------------------
   return (
     <div className={`${styles.app}`}>
       <img ref={animationContainer} src={rainbowimg} className={`${styles.rainbow}`}/>
-      <div onClick={closeOnContainer} ref={scrollContainer} onWheel={reactToScrolling} className={`${styles.mycontainer} ${toggleMenu ? styles.openMenu : styles.closeMenu}`}>        
+      <div onClick={closeOnContainer} ref={scrollContainer} onWheel={reactToScrolling} onTouchStart={reactToTouchStart} onTouchMove={reactToTouchMove} onTouchEnd={reactToTouchEnd} className={`${styles.mycontainer} ${toggleMenu ? styles.openMenu : styles.closeMenu}`}>        
         <div ref={pagesContainer} className={styles.page}>
-          <Home handleToggleMenu={handleToggleMenu}></Home>
-          <Team handleToggleMenu={handleToggleMenu}></Team>
-          <Twodthreed handleToggleMenu={handleToggleMenu}></Twodthreed>
-          <Arready handleToggleMenu={handleToggleMenu}></Arready>
-          <Baecoin handleToggleMenu={handleToggleMenu}></Baecoin>
-          <Customize handleToggleMenu={handleToggleMenu}></Customize>
+          <Home handleToggleMenu={handleToggleMenu} mobile={mobile}></Home>
+          <Team handleToggleMenu={handleToggleMenu} mobile={mobile}></Team>
+          <Twodthreed handleToggleMenu={handleToggleMenu} mobile={mobile}></Twodthreed>
+          <Arready handleToggleMenu={handleToggleMenu} mobile={mobile}></Arready>
+          <Baecoin handleToggleMenu={handleToggleMenu} mobile={mobile}></Baecoin>
+          <Customize handleToggleMenu={handleToggleMenu} mobile={mobile}></Customize>
         </div>
       </div>
       <Menu toggleMenu={toggleMenu} handleToggleMenu={handleToggleMenu}></Menu>

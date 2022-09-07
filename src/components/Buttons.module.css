@@ -1,5 +1,14 @@
 .buttons {
+    grid-column: 1/2;
+    grid-row: 3/4;
     display: flex;
     align-content: center;
     gap: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .buttons {
+        align-items: flex-end;
+        justify-content: center;
+    }
 }

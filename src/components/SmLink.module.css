@@ -19,7 +19,13 @@
 
 @media only screen and (max-width: 600px) {
     .small {
-        width: 2vw!important;
+        width: 4vw!important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .small {
+        width: 3vw!important;
     }
 }
 

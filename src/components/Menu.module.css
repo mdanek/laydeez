@@ -41,3 +41,11 @@
 .displayNone {
     display: none;
 }
+
+@media only screen and (max-width: 600px) {
+    .navBar {
+        letter-spacing: 0rem;
+        width: 50vw;
+        font-size: 1.8rem;
+    }
+}

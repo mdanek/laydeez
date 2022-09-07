@@ -26,8 +26,19 @@
     letter-spacing: 0.1rem;
 }
 
+.buttonImg {
+    object-fit: contain;
+}
+
 @media only screen and (min-width: 2500px) {
     .button { 
         height: calc( 4rem + var(--step-2));
+    }
+}
+
+@media only screen and (min-width: 4000px) {
+    .button { 
+        height: calc( 5rem + var(--step-3
+        ));
     }
 }

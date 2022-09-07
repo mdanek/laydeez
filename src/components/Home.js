@@ -1,4 +1,5 @@
 import homevideo from '../assets/home/homevideo.mp4';
+import homevideoMob from '../assets/home/homevideo-mob.mp4';
 import whoruns from '../assets/home/whoruns1a.png';
 import mintnow from '../assets/home/mintnow.png';
 import opensea from '../assets/home/opensea.png';
@@ -18,14 +19,14 @@ const openseaBtn = {
     img: opensea
 };
 
-const h3String = "<span style='color: rgb(249, 97, 195)'>Laydeez</span> <span style='color: rgb(255, 241, 124)'>NFT</span> is a project led by women team. We look to give to empower women.";
+const h3String = "<span style='color: rgb(0, 199, 237)'>Laydeez</span> <span style='color: rgb(255, 241, 124)'>NFT</span> is a project led by women team. We look to give to empower women.";
 
-const Home = ({ active, handleToggleMenu }) => {
+const Home = ({ active, handleToggleMenu, mobile }) => {
 
     return (
-        <div id="home" className={`${styles.home} page d-flex flex-wrap`}>
+        <div id="home" className={`${styles.home} page`}>
             {/* <Rainbow active={active}></Rainbow> */}
-            <video className={styles.homevideo} src={homevideo} autoPlay loop muted />
+            <video className={styles.homevideo} src={mobile ? homevideoMob : homevideo} autoPlay loop muted />
             <Header handleToggleMenu={handleToggleMenu}></Header>
             <PageBody img={whoruns} h3String={h3String} buttons={[mintnowBtn, openseaBtn]}></PageBody>
             {/* <div className={`${styles.homeBody}`}>

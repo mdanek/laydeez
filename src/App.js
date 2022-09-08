@@ -88,6 +88,8 @@ function App() {
         if(!upDown(touchesArrayUpDown)) {
           executeScroll(event, canScroll, delay, direction)
         }
+        console.log("hor arr: ", touchesArray)
+        console.log("vert arr: ", touchesArrayUpDown)
         touchesArray = [];
         touchesArrayUpDown = [];
       }

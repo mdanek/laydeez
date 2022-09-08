@@ -25,7 +25,7 @@ const h3String = "<span style='color: rgb(249, 97, 195)'>Laydeez</span> <span st
 const Arready = ({ handleToggleMenu, mobile }) => {
     return (
         <div id="arready" className={`${styles.arready} page`}>
-            <video className={styles.arreadyvideo} src={mobile ? arreadyvideoMob : arreadyvideo} poster={mobile ? arreadyvideoposterMob : arreadyvideoposter} autoplay loop muted />
+            <video className={styles.arreadyvideo} src={mobile ? arreadyvideoMob : arreadyvideo} poster={mobile ? arreadyvideoposterMob : arreadyvideoposter} muted autoPlay={"autoplay"} preLoad="auto" loop />
             <Header handleToggleMenu={handleToggleMenu}></Header>
             <PageBody img={arready} h3String={h3String} buttons={[learnmoreBtn, openseaBtn]}></PageBody>
         </div>

@@ -1,5 +1,5 @@
-import arreadyvideo from '../assets/arready/arreadyvideo.mp4';
-import arreadyvideoMob from '../assets/arready/arreadyvideo-mob.mp4';
+import arreadyvideo from '../assets/arready/arreadyvideo1.mp4';
+import arreadyvideoMob from '../assets/arready/arreadyvideo-mob1.mp4';
 import arreadyvideoposter from '../assets/arready/arbackground1b.jpg';
 import arreadyvideoposterMob from '../assets/arready/arbackground1b-mob.jpg';
 import arready from '../assets/arready/arready1.png';

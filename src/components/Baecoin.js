@@ -1,5 +1,5 @@
-import baecoinvideo from '../assets/baecoin/baecoinvideo.mp4';
-import baecoinvideoMob from '../assets/baecoin/baecoinvideo-mob.mp4';
+import baecoinvideo from '../assets/baecoin/baecoinvideo1.mp4';
+import baecoinvideoMob from '../assets/baecoin/baecoinvideo-mob1.mp4';
 import baecoinvideoposter from '../assets/baecoin/baecoinbackground1b.jpg';
 import baecoinvideoposterMob from '../assets/baecoin/baecoinbackground1b-mob.jpg';
 import baecoin from '../assets/baecoin/baecoin.png';

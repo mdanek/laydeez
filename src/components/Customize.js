@@ -1,5 +1,5 @@
-import customizevideo from '../assets/customize/customizevideo.mp4';
-import customizevideoMob from '../assets/customize/customizevideo-mob.mp4';
+import customizevideo from '../assets/customize/customizevideo1.mp4';
+import customizevideoMob from '../assets/customize/customizevideo-mob1.mp4';
 import customizevideoposter from '../assets/customize/custom1b.jpg';
 import customizevideoposterMob from '../assets/customize/custom1b-mob.jpg';
 import customizeimage from '../assets/customize/customlaydeez1a.png';

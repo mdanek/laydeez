@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/laydeez/static/css/main.36f16d2a.css",
-    "main.js": "/laydeez/static/js/main.54d6bde1.js",
+    "main.js": "/laydeez/static/js/main.beebcf4b.js",
     "static/js/787.466ea8cc.chunk.js": "/laydeez/static/js/787.466ea8cc.chunk.js",
-    "static/media/homevideo.mp4": "/laydeez/static/media/homevideo.427e22bf3515736d79f3.mp4",
-    "static/media/homevideo-mob.mp4": "/laydeez/static/media/homevideo-mob.dd922c6881c14c06f361.mp4",
-    "static/media/customizevideo-mob.mp4": "/laydeez/static/media/customizevideo-mob.9115bfc8d1690ccba813.mp4",
-    "static/media/customizevideo.mp4": "/laydeez/static/media/customizevideo.8edb0fc77d145139cc1e.mp4",
-    "static/media/twodthreedvideo.mp4": "/laydeez/static/media/twodthreedvideo.4e552bb0237ffd31e898.mp4",
-    "static/media/twodthreedvideo-mob.mp4": "/laydeez/static/media/twodthreedvideo-mob.0b4dffc547aad2686642.mp4",
-    "static/media/arreadyvideo-mob.mp4": "/laydeez/static/media/arreadyvideo-mob.2fb300ae63101dd43d47.mp4",
-    "static/media/arreadyvideo.mp4": "/laydeez/static/media/arreadyvideo.db928b85bc20cf32d699.mp4",
-    "static/media/baecoinvideo-mob.mp4": "/laydeez/static/media/baecoinvideo-mob.d6ae0dbd01c2c344ab26.mp4",
-    "static/media/baecoinvideo.mp4": "/laydeez/static/media/baecoinvideo.178bec64a420ec7e7db2.mp4",
+    "static/media/arreadyvideo-mob1.mp4": "/laydeez/static/media/arreadyvideo-mob1.54dace79b78896a147a8.mp4",
+    "static/media/arreadyvideo1.mp4": "/laydeez/static/media/arreadyvideo1.4984a1f33971892020bf.mp4",
+    "static/media/homevideo-mob1.mp4": "/laydeez/static/media/homevideo-mob1.53516bb258a61f44558e.mp4",
+    "static/media/homevideo1.mp4": "/laydeez/static/media/homevideo1.f5e20ef1f116758a8893.mp4",
+    "static/media/customizevideo1.mp4": "/laydeez/static/media/customizevideo1.34b3b62f720c30333dc6.mp4",
+    "static/media/customizevideo-mob1.mp4": "/laydeez/static/media/customizevideo-mob1.5933ac0f4e266f4d65c1.mp4",
+    "static/media/baecoinvideo-mob1.mp4": "/laydeez/static/media/baecoinvideo-mob1.ded2fc53b2ccd5072438.mp4",
+    "static/media/baecoinvideo1.mp4": "/laydeez/static/media/baecoinvideo1.2edbd3755dbd57357295.mp4",
+    "static/media/twodthreedvideo1.mp4": "/laydeez/static/media/twodthreedvideo1.50615c175c12ffef1274.mp4",
+    "static/media/twodthreedvideo-mob1.mp4": "/laydeez/static/media/twodthreedvideo-mob1.b40782ce1257a4570291.mp4",
     "static/media/transition3.png": "/laydeez/static/media/transition3.68a432edfbe509152520.png",
     "static/media/custom1b.jpg": "/laydeez/static/media/custom1b.15952be3d60e620e3ab6.jpg",
     "static/media/twodthreed1b.jpg": "/laydeez/static/media/twodthreed1b.752849a4abf0eff71e8b.jpg",
@@ -51,11 +51,11 @@
     "static/media/facebook.svg": "/laydeez/static/media/facebook.734efc0db93903931fdf2f22eaed33ec.svg",
     "static/media/menu.svg": "/laydeez/static/media/menu.68a08bc2c19ad4dad03a93969c017a5c.svg",
     "main.36f16d2a.css.map": "/laydeez/static/css/main.36f16d2a.css.map",
-    "main.54d6bde1.js.map": "/laydeez/static/js/main.54d6bde1.js.map",
+    "main.beebcf4b.js.map": "/laydeez/static/js/main.beebcf4b.js.map",
     "787.466ea8cc.chunk.js.map": "/laydeez/static/js/787.466ea8cc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.36f16d2a.css",
-    "static/js/main.54d6bde1.js"
+    "static/js/main.beebcf4b.js"
   ]
 }

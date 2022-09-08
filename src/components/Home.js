@@ -28,7 +28,7 @@ const Home = ({ active, handleToggleMenu, mobile }) => {
     return (
         <div id="home" className={`${styles.home} page`}>
             {/* <Rainbow active={active}></Rainbow> */}
-            <video className={styles.homevideo} src={mobile ? homevideoMob : homevideo} poster={mobile ? homevideoposterMob : homevideoposter} muted autoPlay={"autoplay"} preLoad="auto" loop playsinline />
+            <video className={styles.homevideo} src={mobile ? homevideoMob : homevideo} poster={mobile ? homevideoposterMob : homevideoposter} muted autoPlay={"autoplay"} preLoad="auto" loop playsInline />
             <Header handleToggleMenu={handleToggleMenu}></Header>
             <PageBody img={whoruns} h3String={h3String} buttons={[mintnowBtn, openseaBtn]}></PageBody>
             {/* <div className={`${styles.homeBody}`}>

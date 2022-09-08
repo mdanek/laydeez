@@ -25,7 +25,7 @@ const h3String = "<span style='color: rgb(249, 97, 195)'>Laydeez</span> <span st
 const Baecoin = ({ handleToggleMenu, mobile }) => {
     return (
         <div id="baecoin" className={`${styles.baecoin} page`}>
-            <video className={styles.baecoinvideo} src={mobile ? baecoinvideoMob : baecoinvideo} poster={mobile ? baecoinvideoposterMob : baecoinvideoposter} muted autoPlay={"autoplay"} preLoad="auto" loop />
+            <video className={styles.baecoinvideo} src={mobile ? baecoinvideoMob : baecoinvideo} poster={mobile ? baecoinvideoposterMob : baecoinvideoposter} muted autoPlay={"autoplay"} preLoad="auto" loop playsinline />
             <Header handleToggleMenu={handleToggleMenu}></Header>
             <PageBody img={baecoin} h3String={h3String} buttons={[earnnowBtn, openseaBtn]}></PageBody>
         </div>

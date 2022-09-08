@@ -30,6 +30,7 @@ function App() {
 
     setTimeout(() => {
       canScroll = true;
+      canTouch = true;
     }, delay);
   }
 
@@ -67,6 +68,7 @@ function App() {
 
   //React to touch
   let touchesArray = [];
+  let touchesArrayUpDown = [];
   let canTouch = true;
   let direction = "";
 
@@ -75,15 +77,19 @@ function App() {
   }
 
   const reactToTouchMove = (event) => {
-    if(touchesArray.length < 10 && canTouch) {
+    if(touchesArray.length < 10 && canTouch && canScroll) {
       touchesArray.push(event.touches[0].clientX)
+      touchesArrayUpDown.push(event.touches[0].clientY)
     } else if(canTouch) {
 
       if(canScroll) {
         startIgnoringEvents(delay);
         direction = checkTouchDirection(touchesArray);
-        executeScroll(event, canScroll, delay, direction)
+        if(!upDown(touchesArrayUpDown)) {
+          executeScroll(event, canScroll, delay, direction)
+        }
         touchesArray = [];
+        touchesArrayUpDown = [];
       }
       canScroll = false;
       canTouch = false
@@ -98,6 +104,13 @@ function App() {
     if(arr[0] < arr[arr.length - 1]) {
       return "left"
     } else return "right";
+  }
+  
+  const upDown = (arr) => {
+    let deltaUpDown = (arr[0] - arr[arr.length - 1]);
+    if(Math.abs(deltaUpDown) > 40) {
+      return true
+    } else return false;
   }
 
   //Rainbow animation on slide transition section ----------------------------

@@ -18,7 +18,7 @@ const openseaBtn = {
     img: opensea
 };
 
-const h3String = "<span style='color: rgb(249, 97, 195)'>Laydeez</span> are customizable by using BAE Coin to buy alternate outfits.";
+const h3String = "<span style='color: rgb(249, 97, 195)'>Laydeez</span> are customizable by using <span style='color: rgb(0, 199, 237)'>BAE</span> <span style='color: rgb(255, 241, 124)'>Coin</span> to buy alternate outfits.";
 
 const Customize = ({ handleToggleMenu, mobile }) => {
 

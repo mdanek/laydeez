@@ -1,5 +1,7 @@
 import baecoinvideo from '../assets/baecoin/baecoinvideo.mp4';
 import baecoinvideoMob from '../assets/baecoin/baecoinvideo-mob.mp4';
+import baecoinvideoposter from '../assets/baecoin/baecoinbackground1b.jpg';
+import baecoinvideoposterMob from '../assets/baecoin/baecoinbackground1b-mob.jpg';
 import baecoin from '../assets/baecoin/baecoin.png';
 import earnnow from '../assets/baecoin/earnnow.png';
 import opensea from '../assets/baecoin/opensea.png';
@@ -23,7 +25,7 @@ const h3String = "<span style='color: rgb(249, 97, 195)'>Laydeez</span> <span st
 const Baecoin = ({ handleToggleMenu, mobile }) => {
     return (
         <div id="baecoin" className={`${styles.baecoin} page`}>
-            <video className={styles.baecoinvideo} src={mobile ? baecoinvideoMob : baecoinvideo} autoPlay loop muted />
+            <video className={styles.baecoinvideo} src={mobile ? baecoinvideoMob : baecoinvideo} poster={mobile ? baecoinvideoposterMob : baecoinvideoposter} autoplay loop muted />
             <Header handleToggleMenu={handleToggleMenu}></Header>
             <PageBody img={baecoin} h3String={h3String} buttons={[earnnowBtn, openseaBtn]}></PageBody>
         </div>

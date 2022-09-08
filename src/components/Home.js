@@ -1,5 +1,7 @@
 import homevideo from '../assets/home/homevideo.mp4';
 import homevideoMob from '../assets/home/homevideo-mob.mp4';
+import homevideoposter from '../assets/home/home1e.jpg';
+import homevideoposterMob from '../assets/home/home1e-mob.jpg';
 import whoruns from '../assets/home/whoruns1a.png';
 import mintnow from '../assets/home/mintnow.png';
 import opensea from '../assets/home/opensea.png';
@@ -26,7 +28,7 @@ const Home = ({ active, handleToggleMenu, mobile }) => {
     return (
         <div id="home" className={`${styles.home} page`}>
             {/* <Rainbow active={active}></Rainbow> */}
-            <video className={styles.homevideo} src={mobile ? homevideoMob : homevideo} autoPlay loop muted />
+            <video className={styles.homevideo} src={mobile ? homevideoMob : homevideo} poster={mobile ? homevideoposterMob : homevideoposter} autoplay loop muted />
             <Header handleToggleMenu={handleToggleMenu}></Header>
             <PageBody img={whoruns} h3String={h3String} buttons={[mintnowBtn, openseaBtn]}></PageBody>
             {/* <div className={`${styles.homeBody}`}>

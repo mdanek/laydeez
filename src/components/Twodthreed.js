@@ -1,6 +1,8 @@
 import twothreedimage from '../assets/twodthreed/twodthreedlaydeez1d.png';
 import twodthreedvideo from '../assets/twodthreed/twodthreedvideo.mp4';
 import twodthreedvideoMob from '../assets/twodthreed/twodthreedvideo-mob.mp4';
+import twodthreedvideoposter from '../assets/twodthreed/twodthreed1b.jpg';
+import twodthreedvideoposterMob from '../assets/twodthreed/twodthreed1b-mob.jpg';
 import earnnow from '../assets/twodthreed/earnnow.png';
 import opensea from '../assets/twodthreed/opensea.png';
 import PageBody from './PageBody';
@@ -26,7 +28,7 @@ const Twodthreed = ({ active, handleToggleMenu, mobile }) => {
     return (
         <div id="twodthreed" className={`${styles.twodthreed} page`}>
             {/* <Rainbow active={active}></Rainbow> */}
-            <video className={styles.twodthreedvideo} src={mobile ? twodthreedvideoMob : twodthreedvideo} autoPlay loop muted />
+            <video className={styles.twodthreedvideo} src={mobile ? twodthreedvideoMob : twodthreedvideo} poster={mobile ? twodthreedvideoposterMob : twodthreedvideoposter} autoplay loop muted />
             <Header handleToggleMenu={handleToggleMenu}></Header>
             <PageBody img={twothreedimage} h3String={h3String} buttons={[earnnowBtn, openseaBtn]}></PageBody>
         </div>

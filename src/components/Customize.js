@@ -1,5 +1,7 @@
 import customizevideo from '../assets/customize/customizevideo.mp4';
 import customizevideoMob from '../assets/customize/customizevideo-mob.mp4';
+import customizevideoposter from '../assets/customize/custom1b.jpg';
+import customizevideoposterMob from '../assets/customize/custom1b-mob.jpg';
 import customizeimage from '../assets/customize/customlaydeez1a.png';
 import earnnow from '../assets/customize/earnnow.png';
 import opensea from '../assets/customize/opensea.png';
@@ -24,7 +26,7 @@ const Customize = ({ handleToggleMenu, mobile }) => {
 
     return (
         <div id="customize" className={`${styles.customize} page`}>
-            <video className={styles.customizevideo} src={mobile ? customizevideoMob : customizevideo} autoPlay loop muted />
+            <video className={styles.customizevideo} src={mobile ? customizevideoMob : customizevideo} poster={mobile ? customizevideoposterMob : customizevideoposter} autoplay loop muted />
             <Header handleToggleMenu={handleToggleMenu}></Header>
             <PageBody img={customizeimage} h3String={h3String} buttons={[earnnowBtn, openseaBtn]}></PageBody>
         </div>

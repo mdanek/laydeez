@@ -43,10 +43,10 @@
 }
 
 .avatar {
-    height: 20vh;
+    height: 16vh;
     object-fit: cover;
     position: absolute;
-    top: -50%;
+    top: -45%;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -67,10 +67,6 @@
     .card span {
         font-size: 0.8rem;
     }
-    .avatar {
-        height: 20vh;
-        /* left: 27%; */
-    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -79,9 +75,5 @@
     }
     .card span {
         font-size: 0.6rem;
-    }
-    .avatar {
-        height: 20vh;
-        /* left: 27%; */
     }
 }

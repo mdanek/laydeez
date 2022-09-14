@@ -2,7 +2,7 @@ import baecoinvideo from '../assets/baecoin/baecoinvideo1.mp4';
 import baecoinvideoMob from '../assets/baecoin/baecoinvideo-mob1.mp4';
 import baecoinvideoposter from '../assets/baecoin/baecoinbackground1b.jpg';
 import baecoinvideoposterMob from '../assets/baecoin/baecoinbackground1b-mob.jpg';
-import baecoin from '../assets/baecoin/baecoin.png';
+import baecoin from '../assets/baecoin/baecoin2.png';
 import earnnow from '../assets/baecoin/earnnow.png';
 import opensea from '../assets/baecoin/opensea.png';
 import Header from './Header';
@@ -20,7 +20,7 @@ const openseaBtn = {
     img: opensea
 };
 
-const h3String = "<span style='color: rgb(249, 97, 195)'>Laydeez</span> <span style='color: rgb(255, 241, 124)'>NFT</span> is a project that is AR ready to go and is exciting and fun!";
+const h3String = "All LayDeez NFTs will be able to earn our utility token just by holding. The utility token is a real crypto coin that you can use within our ecosystem. You’ll be able to visit our shop and buy NFTs, new traits, WL spots, raffles, and so much more!";
 
 const Baecoin = ({ handleToggleMenu, mobile }) => {
     return (

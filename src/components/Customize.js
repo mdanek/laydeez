@@ -2,7 +2,7 @@ import customizevideo from '../assets/customize/customizevideo1.mp4';
 import customizevideoMob from '../assets/customize/customizevideo-mob1.mp4';
 import customizevideoposter from '../assets/customize/custom1b.jpg';
 import customizevideoposterMob from '../assets/customize/custom1b-mob.jpg';
-import customizeimage from '../assets/customize/customlaydeez1a.png';
+import customizeimage from '../assets/customize/customlaydeez2.png';
 import earnnow from '../assets/customize/earnnow.png';
 import opensea from '../assets/customize/opensea.png';
 import Header from './Header';
@@ -20,7 +20,7 @@ const openseaBtn = {
     img: opensea
 };
 
-const h3String = "<span style='color: rgb(249, 97, 195)'>Laydeez</span> are customizable by using <span style='color: rgb(0, 199, 237)'>BAE</span> <span style='color: rgb(255, 241, 124)'>Coin</span> to buy alternate outfits.";
+const h3String = "<span style='color: rgb(249, 97, 195)'>Laydeez</span> is one of the first NFT projects in the world to allow full customization on-chain! Use the utility token in our shop to get backgrounds, music, and new traits to fully customize your PFP. This increases the value and rarity of your NFT and makes it unique to you! Or buy these items and resell them to others for ETH on marketplaces like Opensea.";
 
 const Customize = ({ handleToggleMenu, mobile }) => {
 

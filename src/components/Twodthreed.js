@@ -21,7 +21,7 @@ const openseaBtn = {
     img: opensea
 };
 
-const h3String = "<span style='color: rgb(0, 199, 237)'>Laydeez</span> <span style='color: rgb(249, 97, 195)'>are not only 2D but have 3D versions that come along for free!</span>";
+const h3String = "Every <span style='color: rgb(0, 199, 237)'>LayDeez NFT</span> comes with a 2D PFP as well as a matching 3D PFP for free! Swap between PFPs on-chain with the click of a button!";
 
 const Twodthreed = ({ active, handleToggleMenu, mobile }) => {
 

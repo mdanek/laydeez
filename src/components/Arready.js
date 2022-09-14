@@ -2,7 +2,7 @@ import arreadyvideo from '../assets/arready/arreadyvideo1.mp4';
 import arreadyvideoMob from '../assets/arready/arreadyvideo-mob1.mp4';
 import arreadyvideoposter from '../assets/arready/arbackground1b.jpg';
 import arreadyvideoposterMob from '../assets/arready/arbackground1b-mob.jpg';
-import arready from '../assets/arready/arready1.png';
+import arready from '../assets/arready/arready2.png';
 import learnmore from '../assets/arready/learnmore.png';
 import opensea from '../assets/arready/opensea.png';
 import Header from './Header';
@@ -20,7 +20,7 @@ const openseaBtn = {
     img: opensea
 };
 
-const h3String = "<span style='color: rgb(249, 97, 195)'>Laydeez</span> <span style='color: rgb(255, 241, 124)'>NFT</span> is a project that is AR ready to go and is exciting and fun!";
+const h3String = "Shortly after mint, we will be releasing a download link where holders can download meta-ready models of their PFP. This will allow users to take their PFP to tons of different metaverse locations. It’s a true meta-ready NFT project.";
 
 const Arready = ({ handleToggleMenu, mobile }) => {
     return (

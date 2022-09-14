@@ -2,7 +2,7 @@ import homevideo from '../assets/home/homevideo1.mp4';
 import homevideoMob from '../assets/home/homevideo-mob1.mp4';
 import homevideoposter from '../assets/home/home1e.jpg';
 import homevideoposterMob from '../assets/home/home1e-mob.jpg';
-import whoruns from '../assets/home/whoruns1a.png';
+import whoruns from '../assets/home/whoruns2a.png';
 import mintnow from '../assets/home/mintnow.png';
 import opensea from '../assets/home/opensea.png';
 import Header from './Header';
@@ -21,7 +21,7 @@ const openseaBtn = {
     img: opensea
 };
 
-const h3String = "<span style='color: rgb(0, 199, 237)'>Laydeez</span> <span style='color: rgb(255, 241, 124)'>NFT</span> is a project led by women team. We look to give to empower women.";
+const h3String = "<span style='color: rgb(255, 241, 124)'>LayDeez NFT</span> is a collection of 5,555 unique profile pictures which will mint for .069 ETH each. Every NFT in the collection will come with additional utility and unlock special features including access to our play-to-earn games.";
 
 const Home = ({ active, handleToggleMenu, mobile }) => {
 

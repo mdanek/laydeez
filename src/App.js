@@ -7,6 +7,9 @@ import Twodthreed from './components/Twodthreed';
 import Arready from './components/Arready';
 import Baecoin from './components/Baecoin';
 import Customize from './components/Customize';
+import Fcancer from './components/Fcancer';
+import Playtoearn from './components/Playtoearn';
+import Breeding from './components/Breeding';
 import styles from './App.module.css';
 import './App.css';
 import rainbowimg from './assets/transition3.png';
@@ -187,6 +190,10 @@ function App() {
           <Team handleToggleMenu={handleToggleMenu} mobile={mobile}></Team>
           <Twodthreed handleToggleMenu={handleToggleMenu} mobile={mobile}></Twodthreed>
           <Arready handleToggleMenu={handleToggleMenu} mobile={mobile}></Arready>
+          <Breeding handleToggleMenu={handleToggleMenu} mobile={mobile}></Breeding>
+          <Playtoearn handleToggleMenu={handleToggleMenu} mobile={mobile}></Playtoearn>
+          
+          <Fcancer handleToggleMenu={handleToggleMenu} mobile={mobile}></Fcancer>
           <Baecoin handleToggleMenu={handleToggleMenu} mobile={mobile}></Baecoin>
           <Customize handleToggleMenu={handleToggleMenu} mobile={mobile}></Customize>
         </div>

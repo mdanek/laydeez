@@ -7,7 +7,7 @@ const PageBody = ({ img, h3String, buttons }) => {
         <div className={`${styles.pageBody}`}>
             <img className={styles.img} src={img}></img>
             <h3 dangerouslySetInnerHTML={{__html: h3String}}></h3>
-            <Buttons buttons={buttons}></Buttons>
+            {/* <Buttons buttons={buttons}></Buttons> */}
         </div>
     )
 }

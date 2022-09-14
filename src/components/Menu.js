@@ -7,9 +7,12 @@ const Menu = ({ toggleMenu, handleToggleMenu }) => {
         <div className={toggleMenu ? styles.navBar : styles.navBarHidden}>
             <ul className={styles.menuList}>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#team">Team</a></li>
                 <li><a href="#twodthreed">2D + 3D</a></li>
                 <li><a href="#arready">AR Ready</a></li>
+                <li><a href="#breeding">Breeding</a></li>
+                <li><a href="#playtoearn">Play to Earn</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#fcancer">F Cancer</a></li>
                 <li><a href="#baecoin">BaeCoin</a></li>
                 <li><a href="#customize">Customize</a></li>
             </ul>

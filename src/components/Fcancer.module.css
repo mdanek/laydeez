@@ -1,0 +1,24 @@
+.fcancer {
+    background: url('../assets/fcancer/fcancer1a.jpg') no-repeat center 10%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    align-content: space-between;
+    position: relative;
+    display: grid;
+    grid-template-columns: 7vw 0.8fr 1fr;
+    grid-template-rows: 15vh 1fr 4vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .fcancer {
+        grid-template-columns: 3vw 1fr 3vw;
+        grid-template-rows: 5vh 1fr 4vh;
+        background-size: cover;
+    }
+}

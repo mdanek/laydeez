@@ -74,14 +74,16 @@
 
 @media only screen and (max-width: 600px) {
     .teamheader {
-        height: 6vh;
+        height: 4vh;
     }
     .aboutus h2 {
         font-size: 1.5rem;
+        display: none;
     }
     .aboutus p {
         font-size: 0.8rem;
         padding: 4vw;
+        border-radius: 10px;
     }
 }
 

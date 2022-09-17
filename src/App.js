@@ -187,12 +187,11 @@ function App() {
       <div onClick={closeOnContainer} ref={scrollContainer} onWheel={reactToScrolling} onTouchStart={reactToTouchStart} onTouchMove={reactToTouchMove} onTouchEnd={reactToTouchEnd} className={`${styles.mycontainer} ${toggleMenu ? styles.openMenu : styles.closeMenu}`}>        
         <div ref={pagesContainer} className={styles.page}>
           <Home handleToggleMenu={handleToggleMenu} mobile={mobile}></Home>
-          <Team handleToggleMenu={handleToggleMenu} mobile={mobile}></Team>
           <Twodthreed handleToggleMenu={handleToggleMenu} mobile={mobile}></Twodthreed>
           <Arready handleToggleMenu={handleToggleMenu} mobile={mobile}></Arready>
           <Breeding handleToggleMenu={handleToggleMenu} mobile={mobile}></Breeding>
           <Playtoearn handleToggleMenu={handleToggleMenu} mobile={mobile}></Playtoearn>
-          
+          <Team handleToggleMenu={handleToggleMenu} mobile={mobile}></Team>
           <Fcancer handleToggleMenu={handleToggleMenu} mobile={mobile}></Fcancer>
           <Baecoin handleToggleMenu={handleToggleMenu} mobile={mobile}></Baecoin>
           <Customize handleToggleMenu={handleToggleMenu} mobile={mobile}></Customize>

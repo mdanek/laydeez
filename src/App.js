@@ -60,6 +60,19 @@ function App() {
     }
   }
 
+    //Execute mobile full page horizontal scroll
+    const executeSwipe = (direction) => {  
+      //scroll right on mousewheel down or swipe right after small timeout
+      if (direction === "right") {
+        scrollContainer.current.scrollLeft += (1 * scrollContainer.current.offsetWidth);
+      }
+  
+      //scroll left on mousewheel up or swipe left after small timeout
+      if (direction === "left") {
+        scrollContainer.current.scrollLeft += (-1 * scrollContainer.current.offsetWidth);
+      }
+    }
+
   //React to onWheel event
   const reactToScrolling = (event) => {
     if(canScroll) {
@@ -74,35 +87,43 @@ function App() {
   let touchesArrayUpDown = [];
   let canTouch = true;
   let direction = "";
+  let start = 0;
+  let end = 0;
 
-  const reactToTouchStart = () => {
-    canTouch = true;
+  const reactToTouchStart = (event) => {
+    // canTouch = true;
+    start = event.touches[0];
   }
 
-  const reactToTouchMove = (event) => {
-    if(touchesArray.length < 10 && canTouch && canScroll) {
-      touchesArray.push(event.touches[0].clientX)
-      touchesArrayUpDown.push(event.touches[0].clientY)
-    } else if(canTouch) {
+  // const reactToTouchMove = (event) => {
+  //   if(touchesArray.length < 10 && canTouch && canScroll) {
+  //     touchesArray.push(event.touches[0].clientX)
+  //     touchesArrayUpDown.push(event.touches[0].clientY)
+  //   } else if(canTouch) {
 
-      if(canScroll) {
-        startIgnoringEvents(delay);
-        direction = checkTouchDirection(touchesArray);
-        if(!upDown(touchesArrayUpDown)) {
-          executeScroll(event, canScroll, delay, direction)
-        }
-        console.log("hor arr: ", touchesArray)
-        console.log("vert arr: ", touchesArrayUpDown)
-        touchesArray = [];
-        touchesArrayUpDown = [];
-      }
-      canScroll = false;
-      canTouch = false
+  //     if(1) {
+  //       // startIgnoringEvents(delay);
+  //       direction = checkTouchDirection(touchesArray);
+  //       if(!upDown(touchesArrayUpDown)) {
+  //         executeSwipe(event, canScroll, delay, direction)
+  //       }
+  //       touchesArray = [];
+  //       touchesArrayUpDown = [];
+  //     }
+  //     canScroll = false;
+  //     canTouch = false
+  //   }
+  // }
+
+  const reactToTouchEnd = (event) => {
+    // canTouch = true;
+    end = event.changedTouches[0];
+    if (Math.abs(start.clientY - end.clientY) < 50) {
+      if (start.clientX < end.clientX) {executeSwipe('left')}
+      if (start.clientX > end.clientX) {executeSwipe('right')}
     }
-  }
-
-  const reactToTouchEnd = () => {
-    canTouch = true;
+    start = 0;
+    end = 0;
   }
 
   const checkTouchDirection = (arr) => {
@@ -184,7 +205,7 @@ function App() {
   return (
     <div className={`${styles.app}`}>
       <img ref={animationContainer} src={rainbowimg} className={`${styles.rainbow}`}/>
-      <div onClick={closeOnContainer} ref={scrollContainer} onWheel={reactToScrolling} onTouchStart={reactToTouchStart} onTouchMove={reactToTouchMove} onTouchEnd={reactToTouchEnd} className={`${styles.mycontainer} ${toggleMenu ? styles.openMenu : styles.closeMenu}`}>        
+      <div onClick={closeOnContainer} ref={scrollContainer} onWheel={reactToScrolling} onTouchStart={reactToTouchStart}  onTouchEnd={reactToTouchEnd} className={`${styles.mycontainer} ${toggleMenu ? styles.openMenu : styles.closeMenu}`}>        
         <div ref={pagesContainer} className={styles.page}>
           <Home handleToggleMenu={handleToggleMenu} mobile={mobile}></Home>
           <Twodthreed handleToggleMenu={handleToggleMenu} mobile={mobile}></Twodthreed>

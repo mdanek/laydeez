@@ -112,6 +112,13 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .app {
+        height: 100%;
+    }
+    .mycontainer {
+        height: 100%;
+        width: 100%;
+    }
     .page {
         grid-auto-flow: row;
     }
@@ -123,6 +130,7 @@
         height: calc(200vw + calc(50*var(--step-4)));
         left: -550vw;
         top: 100vh;
+        display: none;
     }
 
     .rainbowActive {

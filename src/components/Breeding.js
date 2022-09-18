@@ -17,7 +17,7 @@ const openseaBtn = {
     img: opensea
 };
 
-const h3String = "<span style='color: rgb(255, 241, 124)'>LayDeez </span><span style='color: rgb(0, 199, 237)'>NFT</span> are capable of breeding and giving offspring name JR'Z.";
+const h3String = "<span style='color: rgb(255, 241, 124)'>LayDeez </span><span style='color: rgb(0, 199, 237)'>NFT</span> are capable of breeding and giving offspring name <span style='color: rgb(255, 241, 124)'>JR'Z</span>.";
 
 const Breeding = ({ active, handleToggleMenu, mobile }) => {
 

@@ -20,13 +20,13 @@ const openseaBtn = {
     img: opensea
 };
 
-const h3String = "<span style='color: rgb(249, 97, 195)'>Laydeez</span> is one of the first NFT projects in the world to allow full customization on-chain! Use the utility token in our shop to get backgrounds, music, and new traits to fully customize your PFP. This increases the value and rarity of your NFT and makes it unique to you! Or buy these items and resell them to others for ETH on marketplaces like Opensea.";
+const h3String = "<span style='color: rgb(255, 241, 124)'>Laydeez</span> is one of the first <span style='color: rgb(255, 241, 124)'>NFT</span> projects in the world to allow full customization on-chain! Use the utility token in our shop to get backgrounds, music, and new traits to fully customize your <span style='color: rgb(255, 241, 124)'>PFP</span>. This increases the value and rarity of your <span style='color: rgb(255, 241, 124)'>NFT</span> and makes it unique to you! Or buy these items and resell them to others for <span style='color: rgb(255, 241, 124)'>ETH</span> on marketplaces like Opensea.";
 
 const Customize = ({ handleToggleMenu, mobile }) => {
 
     return (
         <div id="customize" className={`${styles.customize} page`}>
-            <video className={styles.customizevideo} src={mobile ? customizevideoMob : customizevideo} poster={mobile ? customizevideoposterMob : customizevideoposter} muted autoPlay={"autoplay"} preLoad="auto" loop playsInline />
+            <video className={styles.customizevideo} src={mobile ? customizevideoMob : customizevideo} poster={mobile ? customizevideoposterMob : customizevideoposter} muted autoPlay={"autoplay"} preload="auto" loop playsInline />
             <Header handleToggleMenu={handleToggleMenu}></Header>
             <PageBody img={customizeimage} h3String={h3String} buttons={[earnnowBtn, openseaBtn]}></PageBody>
         </div>

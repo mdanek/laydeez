@@ -20,12 +20,12 @@ const openseaBtn = {
     img: opensea
 };
 
-const h3String = "All LayDeez NFTs will be able to earn our utility token just by holding. The utility token is a real crypto coin that you can use within our ecosystem. You’ll be able to visit our shop and buy NFTs, new traits, WL spots, raffles, and so much more!";
+const h3String = "All <span style='color: rgb(255, 241, 124)'>LayDeez NFTs</span> will be able to earn our utility token just by holding. The utility token is a real crypto coin that you can use within our ecosystem. You’ll be able to visit our shop and buy <span style='color: rgb(255, 241, 124)'>NFTs</span>, new traits, WL spots, raffles, and so much more!";
 
 const Baecoin = ({ handleToggleMenu, mobile }) => {
     return (
         <div id="baecoin" className={`${styles.baecoin} page`}>
-            <video className={styles.baecoinvideo} src={mobile ? baecoinvideoMob : baecoinvideo} poster={mobile ? baecoinvideoposterMob : baecoinvideoposter} muted autoPlay={"autoplay"} preLoad="auto" loop playsInline />
+            <video className={styles.baecoinvideo} src={mobile ? baecoinvideoMob : baecoinvideo} poster={mobile ? baecoinvideoposterMob : baecoinvideoposter} muted autoPlay={"autoplay"} preload="auto" loop playsInline />
             <Header handleToggleMenu={handleToggleMenu}></Header>
             <PageBody img={baecoin} h3String={h3String} buttons={[earnnowBtn, openseaBtn]}></PageBody>
         </div>

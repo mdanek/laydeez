@@ -21,14 +21,14 @@ const openseaBtn = {
     img: opensea
 };
 
-const h3String = "Every <span style='color: rgb(0, 199, 237)'>LayDeez NFT</span> comes with a 2D PFP as well as a matching 3D PFP for free! Swap between PFPs on-chain with the click of a button!";
+const h3String = "Every <span style='color: rgb(0, 199, 237)'>LayDeez NFT</span> comes with a <span style='color: rgb(255, 241, 124)'>2D PFP</span> as well as a matching <span style='color: rgb(255, 241, 124)'>3D PFP</span> for free! Swap between <span style='color: rgb(255, 241, 124)'>PFPs</span> on-chain with the click of a button!";
 
 const Twodthreed = ({ active, handleToggleMenu, mobile }) => {
 
     return (
         <div id="twodthreed" className={`${styles.twodthreed} page`}>
             {/* <Rainbow active={active}></Rainbow> */}
-            <video className={styles.twodthreedvideo} src={mobile ? twodthreedvideoMob : twodthreedvideo} poster={mobile ? twodthreedvideoposterMob : twodthreedvideoposter} muted autoPlay={"autoplay"} preLoad="auto" loop playsInline />
+            <video className={styles.twodthreedvideo} src={mobile ? twodthreedvideoMob : twodthreedvideo} poster={mobile ? twodthreedvideoposterMob : twodthreedvideoposter} muted autoPlay={"autoplay"} preload="auto" loop playsInline />
             <Header handleToggleMenu={handleToggleMenu}></Header>
             <PageBody img={twothreedimage} h3String={h3String} buttons={[earnnowBtn, openseaBtn]}></PageBody>
         </div>

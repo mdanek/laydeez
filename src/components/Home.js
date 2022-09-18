@@ -21,14 +21,14 @@ const openseaBtn = {
     img: opensea
 };
 
-const h3String = "<span style='color: rgb(255, 241, 124)'>LayDeez NFT</span> is a collection of 5,555 unique profile pictures which will mint for .069 ETH each. Every NFT in the collection will come with additional utility and unlock special features including access to our play-to-earn games.";
+const h3String = "<span style='color: rgb(255, 241, 124)'>LayDeez NFT</span> is a collection of 5,555 unique profile pictures which will mint for .069 <span style='color: rgb(255, 241, 124)'>ETH</span> each. Every <span style='color: rgb(255, 241, 124)'>NFT</span> in the collection will come with additional utility and unlock special features including access to our play-to-earn games.";
 
 const Home = ({ active, handleToggleMenu, mobile }) => {
 
     return (
         <div id="home" className={`${styles.home} page`}>
             {/* <Rainbow active={active}></Rainbow> */}
-            <video className={styles.homevideo} src={mobile ? homevideoMob : homevideo} poster={mobile ? homevideoposterMob : homevideoposter} muted autoPlay={"autoplay"} preLoad="auto" loop playsInline />
+            <video className={styles.homevideo} src={mobile ? homevideoMob : homevideo} poster={mobile ? homevideoposterMob : homevideoposter} muted autoPlay={"autoplay"} preload="auto" loop playsInline />
             <Header handleToggleMenu={handleToggleMenu}></Header>
             <PageBody img={whoruns} h3String={h3String} buttons={[mintnowBtn, openseaBtn]}></PageBody>
             {/* <div className={`${styles.homeBody}`}>

@@ -265,7 +265,7 @@ const Team = ({ active, handleToggleMenu }) => {
                     <h2><span style={{ color: 'rgb(249, 97, 195)' }}>About </span>
                     <span style={{ color: 'rgb(255, 241, 124)' }}>Us</span></h2>
                     <p><span style={{ color: 'rgb(249, 97, 195)' }}>LayDeez</span>  is the latest installment in the Deez ecosystem. The team behind the project is fully doxxed and has 7+ years of experience in art design and game development with over 300 Million game downloads on the app store and two #1 ranked, world wide hits.
-                    The team has worked on projects such as Assassin’s Creed, Cyberpunk 2077, the Witcher, Halo, Spyro the Dragon, and much more. Several new women were hired specifically for this project to bring more inclusion into Web 3.0 and the NFT space. More can be learned about the overall company at https://DeezNFT.io</p>
+                    The team has worked on projects such as Assassin’s Creed, Cyberpunk 2077, the Witcher, Halo, Spyro the Dragon, and much more. Several new women were hired specifically for this project to bring more inclusion into Web 3.0 and the NFT space. More can be learned about the overall company at <a href="https://DeezNFT.io"><span style={{ color: 'rgb(249, 97, 195)' }}>https://DeezNFT.io</span></a></p>
                 </div>
                 <Carousel 
                     className={styles.cards}

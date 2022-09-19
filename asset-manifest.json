@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/laydeez/static/css/main.7d3cc32c.css",
+    "main.css": "/laydeez/static/css/main.044a6ac9.css",
     "main.js": "/laydeez/static/js/main.d9abb47e.js",
     "static/js/787.466ea8cc.chunk.js": "/laydeez/static/js/787.466ea8cc.chunk.js",
     "static/media/arreadyvideo-mob1.mp4": "/laydeez/static/media/arreadyvideo-mob1.54dace79b78896a147a8.mp4",
@@ -52,12 +52,12 @@
     "index.html": "/laydeez/index.html",
     "static/media/facebook.svg": "/laydeez/static/media/facebook.734efc0db93903931fdf2f22eaed33ec.svg",
     "static/media/menu.svg": "/laydeez/static/media/menu.68a08bc2c19ad4dad03a93969c017a5c.svg",
-    "main.7d3cc32c.css.map": "/laydeez/static/css/main.7d3cc32c.css.map",
+    "main.044a6ac9.css.map": "/laydeez/static/css/main.044a6ac9.css.map",
     "main.d9abb47e.js.map": "/laydeez/static/js/main.d9abb47e.js.map",
     "787.466ea8cc.chunk.js.map": "/laydeez/static/js/787.466ea8cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d3cc32c.css",
+    "static/css/main.044a6ac9.css",
     "static/js/main.d9abb47e.js"
   ]
 }

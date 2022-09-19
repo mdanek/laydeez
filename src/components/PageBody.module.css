@@ -97,6 +97,7 @@
 
 @media only screen and (max-width: 600px) {
     .pageBody {
+        padding-top: 2vh;
         grid-template-rows: 0.3fr 1fr 1fr;
         row-gap: 2%;
     }

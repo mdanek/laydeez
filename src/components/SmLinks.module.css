@@ -18,9 +18,9 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .smlinks {
-        /* display: none; */
-    }
+    /* .smlinks {
+        display: none;
+    } */
     
     .small {
         display: inherit!important;

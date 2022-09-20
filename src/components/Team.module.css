@@ -75,10 +75,11 @@
 
 @media only screen and (max-width: 600px) {
     .cards {
-        height: 35vh;
+        height: 30vh;
     }
     .teamheader {
         max-width: 50%;
+        padding-top: 5vh;
     }
     .aboutus h2 {
         font-size: 1.5rem;

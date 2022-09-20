@@ -26,7 +26,7 @@
     .home {
         background: url('../assets/home/home1e-mob.jpg') no-repeat center 10%;
         grid-template-columns: 3vw 1fr 3vw;
-        grid-template-rows: 5vh 1fr 4vh;
+        grid-template-rows: 7vh 1fr 4vh;
         background-size: cover;
     }
 }

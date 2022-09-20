@@ -2,7 +2,7 @@ import baecoinvideo from '../assets/baecoin/baecoinvideo1.mp4';
 import baecoinvideoMob from '../assets/baecoin/baecoinvideo-mob1.mp4';
 import baecoinvideoposter from '../assets/baecoin/baecoinbackground1b.jpg';
 import baecoinvideoposterMob from '../assets/baecoin/baecoinbackground1b-mob.jpg';
-import baecoin from '../assets/baecoin/baecoin2.png';
+import baecoin from '../assets/baecoin/baecoin3.png';
 import earnnow from '../assets/baecoin/earnnow.png';
 import opensea from '../assets/baecoin/opensea.png';
 import Header from './Header';

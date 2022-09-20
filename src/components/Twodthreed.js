@@ -1,4 +1,4 @@
-import twothreedimage from '../assets/twodthreed/twodthreedlaydeez1d.png';
+import twothreedimage from '../assets/twodthreed/twodthreedlaydeez3.png';
 import twodthreedvideo from '../assets/twodthreed/twodthreedvideo1.mp4';
 import twodthreedvideoMob from '../assets/twodthreed/twodthreedvideo-mob1.mp4';
 import twodthreedvideoposter from '../assets/twodthreed/twodthreed1b.jpg';

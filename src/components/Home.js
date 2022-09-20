@@ -2,7 +2,7 @@ import homevideo from '../assets/home/homevideo1.mp4';
 import homevideoMob from '../assets/home/homevideo-mob1.mp4';
 import homevideoposter from '../assets/home/home1e.jpg';
 import homevideoposterMob from '../assets/home/home1e-mob.jpg';
-import whoruns from '../assets/home/whoruns2a.png';
+import whoruns from '../assets/home/whoruns3.png';
 import mintnow from '../assets/home/mintnow.png';
 import opensea from '../assets/home/opensea.png';
 import Header from './Header';

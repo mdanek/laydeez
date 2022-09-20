@@ -1,4 +1,4 @@
-import playtoearn from '../assets/playtoearn/playtoearnimg.png';
+import playtoearn from '../assets/playtoearn/playtoearnimg2.png';
 import mintnow from '../assets/home/mintnow.png';
 import opensea from '../assets/home/opensea.png';
 import Header from './Header';

@@ -1,5 +1,5 @@
 .team {
-    background: url('../assets/team/teamback1b.jpg') no-repeat center 10%;
+    background: url('../assets/team/teamback2.jpg') no-repeat center 10%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
@@ -54,10 +54,11 @@
 
 .cards {
     width: 80vw;
+    height: 40vh;
     margin-bottom: 3vh;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 12vh;
+    padding-top: 10vh;
     /* overflow: inherit!important;
     overflow-x: hidden!important; */
 }
@@ -73,6 +74,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .cards {
+        height: 35vh;
+    }
     .teamheader {
         max-width: 50%;
     }

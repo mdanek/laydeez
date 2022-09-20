@@ -1,5 +1,5 @@
 .fcancer {
-    background: url('../assets/fcancer/fcancer1a.jpg') no-repeat center 10%;
+    background: url('../assets/fcancer/fcancer2.jpg') no-repeat center 10%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
@@ -17,6 +17,7 @@
 
 @media only screen and (max-width: 600px) {
     .fcancer {
+        background: url('../assets/fcancer/fcancer2mob.jpg') no-repeat center 10%;
         grid-template-columns: 3vw 1fr 3vw;
         grid-template-rows: 5vh 1fr 4vh;
         background-size: cover;

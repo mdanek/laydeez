@@ -1,4 +1,4 @@
-import breeding from '../assets/breeding/breedingimg.png';
+import breeding from '../assets/breeding/breedingimg2.png';
 import mintnow from '../assets/home/mintnow.png';
 import opensea from '../assets/home/opensea.png';
 import Header from './Header';

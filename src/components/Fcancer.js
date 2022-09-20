@@ -1,4 +1,4 @@
-import fcancer from '../assets/fcancer/fcancerimg.png';
+import fcancer from '../assets/fcancer/fcancerimg2.png';
 import mintnow from '../assets/home/mintnow.png';
 import opensea from '../assets/home/opensea.png';
 import Header from './Header';

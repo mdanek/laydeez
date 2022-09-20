@@ -10,9 +10,6 @@ const SmLink = ({ smlink, small }) => {
     return (
 
         <a className={styles.smlink} href={smlink.link}>
-            {/* <li>
-                <i className={`${smlink} + ${styles.smlink}`}></i>
-            </li> */}
             <li>
                 <img className={smallIcon} src={smlink.icon} alt={smlink.name}></img>
             </li>

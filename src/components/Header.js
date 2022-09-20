@@ -1,6 +1,8 @@
 import Logo from "./Logo";
 import SmLinks from "./SmLinks";
 import Navbar from "./Navbar";
+import deez from '../assets/social/dicon.svg';
+import linktree from '../assets/social/linktree.svg';
 import facebook from '../assets/social/facebook.svg';
 import twitter from '../assets/social/twitter.svg';
 import instagram from '../assets/social/instagram.svg';
@@ -9,6 +11,16 @@ import tiktok from '../assets/social/tiktok.svg';
 import styles from './Header.module.css';
 
 const smlinksobj = [
+    {
+        name: "deez website",
+        link: "https://deeznft.io/",
+        icon: deez
+    },
+    {
+        name: "linktree",
+        link: "https://linktr.ee/laydeeznft",
+        icon: linktree
+    },
     {
         name: "facebook",
         link: "https://www.facebook.com/deeznfts",

@@ -12,7 +12,7 @@ import Playtoearn from './components/Playtoearn';
 import Breeding from './components/Breeding';
 import styles from './App.module.css';
 import './App.css';
-import rainbowimg from './assets/transition3.png';
+import rainbowimg from './assets/transition4.png';
 
 // const scrollContainer = () => document.getElementsByClassName("container-fluid")[0];
 // console.log(scrollContainer());
@@ -42,7 +42,7 @@ function App() {
     let pageRightSide = scrollContainer.current.scrollLeft + scrollContainer.current.offsetWidth;
     let fullContainerWidth = pagesContainer.current.offsetWidth;
 
-    //scroll right on mousewheel down or swipe right after small timeout
+    //scroll right on mousewheel down after small timeout
     if (direction === "right" || event.deltaY > 0 && canScroll) {
       setTimeout(() => {
         scrollContainer.current.scrollLeft += (1 * scrollContainer.current.offsetWidth);
@@ -50,7 +50,7 @@ function App() {
       if(pageRightSide < fullContainerWidth) showRainbowAnimation(delay);
     }
 
-    //scroll left on mousewheel up or swipe left after small timeout
+    //scroll left on mousewheel up after small timeout
     if (direction === "left" || event.deltaY < 0 && canScroll) {
       setTimeout(() => {
         scrollContainer.current.scrollLeft += (-1 * scrollContainer.current.offsetWidth);
@@ -58,19 +58,6 @@ function App() {
       if(pageLeftSide > 0) showRainbowAnimation(delay);
     }
   }
-
-    //Execute mobile full page horizontal scroll
-    const executeSwipe = (direction) => {  
-      //scroll right on mousewheel down or swipe right after small timeout
-      if (direction === "right") {
-        scrollContainer.current.scrollLeft += (1 * scrollContainer.current.offsetWidth);
-      }
-  
-      //scroll left on mousewheel up or swipe left after small timeout
-      if (direction === "left") {
-        scrollContainer.current.scrollLeft += (-1 * scrollContainer.current.offsetWidth);
-      }
-    }
 
   //React to onWheel event
   const reactToScrolling = (event) => {
@@ -101,6 +88,19 @@ function App() {
     }
     start = 0;
     end = 0;
+  }
+
+  //Execute mobile full page horizontal scroll
+  const executeSwipe = (direction) => {  
+    //swipe right
+    if (direction === "right") {
+      scrollContainer.current.scrollLeft += (1 * scrollContainer.current.offsetWidth);
+    }
+
+    //left
+    if (direction === "left") {
+      scrollContainer.current.scrollLeft += (-1 * scrollContainer.current.offsetWidth);
+    }
   }
 
   //Rainbow animation on slide transition section ----------------------------

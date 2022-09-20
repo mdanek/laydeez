@@ -33,7 +33,6 @@ function App() {
 
     setTimeout(() => {
       canScroll = true;
-      canTouch = true;
     }, delay);
   }
 
@@ -82,61 +81,26 @@ function App() {
     canScroll = false;
   }
 
-  //React to touch
-  let touchesArray = [];
-  let touchesArrayUpDown = [];
-  let canTouch = true;
-  let direction = "";
+  //Swiping on mobile section --------------------------------------------
   let start = 0;
   let end = 0;
+  let deltaX, deltaY;
 
   const reactToTouchStart = (event) => {
-    // canTouch = true;
     start = event.touches[0];
   }
 
-  // const reactToTouchMove = (event) => {
-  //   if(touchesArray.length < 10 && canTouch && canScroll) {
-  //     touchesArray.push(event.touches[0].clientX)
-  //     touchesArrayUpDown.push(event.touches[0].clientY)
-  //   } else if(canTouch) {
-
-  //     if(1) {
-  //       // startIgnoringEvents(delay);
-  //       direction = checkTouchDirection(touchesArray);
-  //       if(!upDown(touchesArrayUpDown)) {
-  //         executeSwipe(event, canScroll, delay, direction)
-  //       }
-  //       touchesArray = [];
-  //       touchesArrayUpDown = [];
-  //     }
-  //     canScroll = false;
-  //     canTouch = false
-  //   }
-  // }
-
   const reactToTouchEnd = (event) => {
-    // canTouch = true;
     end = event.changedTouches[0];
-    if (Math.abs(start.clientY - end.clientY) < 50) {
-      if (start.clientX < end.clientX) {executeSwipe('left')}
-      if (start.clientX > end.clientX) {executeSwipe('right')}
+    deltaX = Math.abs(start.clientX - end.clientX);
+    deltaY = Math.abs(start.clientY - end.clientY);
+
+    if (deltaY < 50) {
+      if (deltaX > 30 && start.clientX < end.clientX) {executeSwipe('left')}
+      if (deltaX > 30 && start.clientX > end.clientX) {executeSwipe('right')}
     }
     start = 0;
     end = 0;
-  }
-
-  const checkTouchDirection = (arr) => {
-    if(arr[0] < arr[arr.length - 1]) {
-      return "left"
-    } else return "right";
-  }
-  
-  const upDown = (arr) => {
-    let deltaUpDown = (arr[0] - arr[arr.length - 1]);
-    if(Math.abs(deltaUpDown) > 40) {
-      return true
-    } else return false;
   }
 
   //Rainbow animation on slide transition section ----------------------------

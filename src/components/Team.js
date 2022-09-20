@@ -5,234 +5,239 @@ import avatar1 from '../assets/team/avatar1.png';
 import avatar2 from '../assets/team/avatar2.png';
 import avatar3 from '../assets/team/avatar3.png';
 import avatar4 from '../assets/team/avatar4.png';
+import teamdata from './TeamData';
 import facebook from '../assets/social/facebook.svg';
 import twitter from '../assets/social/twitter.svg';
 import instagram from '../assets/social/instagram.svg';
 import discord from '../assets/social/discord.svg';
+import tiktok from '../assets/social/tiktok.svg';
 import styles from './Team.module.css';
 import Rainbow from './Rainbow';
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Avatars from "./Avatars";
 
-const teamobj = [
-    {
-        avatar: avatar1,
-        name: "Katie Roberts",
-        role: "Co Founder",
-        smlinks: [
-            {
-                name: "facebook",
-                link: "https://facebook.com",
-                icon: facebook
-            },
-            {
-                name: "twitter",
-                link: "https://twitter.com",
-                icon: twitter
-            },
-            {
-                name: "instagram",
-                link: "https://instagram.com",
-                icon: instagram
-            },
-            {
-                name: "discord",
-                link: "https://discord.com",
-                icon: discord
-            }
-        ]
-    },
-    {
-        avatar: avatar2,
-        name: "Lexi Grey",
-        role: "Co Founder",
-        smlinks: [
-            {
-                name: "facebook",
-                link: "https://facebook.com",
-                icon: facebook
-            },
-            {
-                name: "twitter",
-                link: "https://twitter.com",
-                icon: twitter
-            },
-            {
-                name: "instagram",
-                link: "https://instagram.com",
-                icon: instagram
-            },
-            {
-                name: "discord",
-                link: "https://discord.com",
-                icon: discord
-            }
-        ]
-    },
-    {
-        avatar: avatar3,
-        name: "Alina Bashlakova",
-        role: "Lead Artist",
-        smlinks: [
-            {
-                name: "facebook",
-                link: "https://facebook.com",
-                icon: facebook
-            },
-            {
-                name: "twitter",
-                link: "https://twitter.com",
-                icon: twitter
-            },
-            {
-                name: "instagram",
-                link: "https://instagram.com",
-                icon: instagram
-            },
-            {
-                name: "discord",
-                link: "https://discord.com",
-                icon: discord
-            }
-        ]
-    },
-    {
-        avatar: avatar4,
-        name: "Soleil Moon",
-        role: "Head Operations",
-        smlinks: [
-            {
-                name: "facebook",
-                link: "https://facebook.com",
-                icon: facebook
-            },
-            {
-                name: "twitter",
-                link: "https://twitter.com",
-                icon: twitter
-            },
-            {
-                name: "instagram",
-                link: "https://instagram.com",
-                icon: instagram
-            },
-            {
-                name: "discord",
-                link: "https://discord.com",
-                icon: discord
-            }
-        ]
-    },
-    {
-        avatar: avatar1,
-        name: "Olesia Martushkanova",
-        role: "Web Developer",
-        smlinks: [
-            {
-                name: "facebook",
-                link: "https://facebook.com",
-                icon: facebook
-            },
-            {
-                name: "twitter",
-                link: "https://twitter.com",
-                icon: twitter
-            },
-            {
-                name: "instagram",
-                link: "https://instagram.com",
-                icon: instagram
-            },
-            {
-                name: "discord",
-                link: "https://discord.com",
-                icon: discord
-            }
-        ]
-    },
-    {
-        avatar: avatar2,
-        name: "Jazz Maya",
-        role: "Lead Social Media & Marketing",
-        smlinks: [
-            {
-                name: "facebook",
-                link: "https://facebook.com",
-                icon: facebook
-            },
-            {
-                name: "twitter",
-                link: "https://twitter.com",
-                icon: twitter
-            },
-            {
-                name: "instagram",
-                link: "https://instagram.com",
-                icon: instagram
-            },
-            {
-                name: "discord",
-                link: "https://discord.com",
-                icon: discord
-            }
-        ]
-    },
-    {
-        avatar: avatar3,
-        name: "Lisa Page",
-        role: "Community Manager",
-        smlinks: [
-            {
-                name: "facebook",
-                link: "https://facebook.com",
-                icon: facebook
-            },
-            {
-                name: "twitter",
-                link: "https://twitter.com",
-                icon: twitter
-            },
-            {
-                name: "instagram",
-                link: "https://instagram.com",
-                icon: instagram
-            },
-            {
-                name: "discord",
-                link: "https://discord.com",
-                icon: discord
-            }
-        ]
-    },
-    {
-        avatar: avatar4,
-        name: "Julie Greenbaum",
-        role: "Charity Partnership Representative",
-        smlinks: [
-            {
-                name: "facebook",
-                link: "https://facebook.com",
-                icon: facebook
-            },
-            {
-                name: "twitter",
-                link: "https://twitter.com",
-                icon: twitter
-            },
-            {
-                name: "instagram",
-                link: "https://instagram.com",
-                icon: instagram
-            },
-            {
-                name: "discord",
-                link: "https://discord.com",
-                icon: discord
-            }
-        ]
-    }
-];
+// const teamobj = [
+//     {
+//         avatar: Avatars[0],
+//         name: "Katie Roberts",
+//         role: "Co Founder",
+//         smlinks: [
+//             {
+//                 name: "facebook",
+//                 link: "https://facebook.com",
+//                 icon: facebook
+//             },
+//             {
+//                 name: "twitter",
+//                 link: "https://twitter.com",
+//                 icon: twitter
+//             },
+//             {
+//                 name: "instagram",
+//                 link: "https://instagram.com",
+//                 icon: instagram
+//             },
+//             {
+//                 name: "discord",
+//                 link: "https://discord.com",
+//                 icon: discord
+//             }
+//         ]
+//     },
+//     {
+//         avatar: avatar2,
+//         name: "Lexi Grey",
+//         role: "Co Founder",
+//         smlinks: [
+//             {
+//                 name: "facebook",
+//                 link: "https://facebook.com",
+//                 icon: facebook
+//             },
+//             {
+//                 name: "twitter",
+//                 link: "https://twitter.com",
+//                 icon: twitter
+//             },
+//             {
+//                 name: "instagram",
+//                 link: "https://instagram.com",
+//                 icon: instagram
+//             },
+//             {
+//                 name: "discord",
+//                 link: "https://discord.com",
+//                 icon: discord
+//             }
+//         ]
+//     },
+//     {
+//         avatar: avatar3,
+//         name: "Alina Bashlakova",
+//         role: "Lead Artist",
+//         smlinks: [
+//             {
+//                 name: "facebook",
+//                 link: "https://facebook.com",
+//                 icon: facebook
+//             },
+//             {
+//                 name: "twitter",
+//                 link: "https://twitter.com",
+//                 icon: twitter
+//             },
+//             {
+//                 name: "instagram",
+//                 link: "https://instagram.com",
+//                 icon: instagram
+//             },
+//             {
+//                 name: "discord",
+//                 link: "https://discord.com",
+//                 icon: discord
+//             }
+//         ]
+//     },
+//     {
+//         avatar: avatar4,
+//         name: "Soleil Moon",
+//         role: "Head Operations",
+//         smlinks: [
+//             {
+//                 name: "facebook",
+//                 link: "https://facebook.com",
+//                 icon: facebook
+//             },
+//             {
+//                 name: "twitter",
+//                 link: "https://twitter.com",
+//                 icon: twitter
+//             },
+//             {
+//                 name: "instagram",
+//                 link: "https://instagram.com",
+//                 icon: instagram
+//             },
+//             {
+//                 name: "discord",
+//                 link: "https://discord.com",
+//                 icon: discord
+//             }
+//         ]
+//     },
+//     {
+//         avatar: avatar1,
+//         name: "Olesia Martushkanova",
+//         role: "Web Developer",
+//         smlinks: [
+//             {
+//                 name: "facebook",
+//                 link: "https://facebook.com",
+//                 icon: facebook
+//             },
+//             {
+//                 name: "twitter",
+//                 link: "https://twitter.com",
+//                 icon: twitter
+//             },
+//             {
+//                 name: "instagram",
+//                 link: "https://instagram.com",
+//                 icon: instagram
+//             },
+//             {
+//                 name: "discord",
+//                 link: "https://discord.com",
+//                 icon: discord
+//             }
+//         ]
+//     },
+//     {
+//         avatar: avatar2,
+//         name: "Jazz Maya",
+//         role: "Lead Social Media & Marketing",
+//         smlinks: [
+//             {
+//                 name: "facebook",
+//                 link: "https://facebook.com",
+//                 icon: facebook
+//             },
+//             {
+//                 name: "twitter",
+//                 link: "https://twitter.com",
+//                 icon: twitter
+//             },
+//             {
+//                 name: "instagram",
+//                 link: "https://instagram.com",
+//                 icon: instagram
+//             },
+//             {
+//                 name: "discord",
+//                 link: "https://discord.com",
+//                 icon: discord
+//             }
+//         ]
+//     },
+//     {
+//         avatar: avatar3,
+//         name: "Lisa Page",
+//         role: "Community Manager",
+//         smlinks: [
+//             {
+//                 name: "facebook",
+//                 link: "https://facebook.com",
+//                 icon: facebook
+//             },
+//             {
+//                 name: "twitter",
+//                 link: "https://twitter.com",
+//                 icon: twitter
+//             },
+//             {
+//                 name: "instagram",
+//                 link: "https://instagram.com",
+//                 icon: instagram
+//             },
+//             {
+//                 name: "discord",
+//                 link: "https://discord.com",
+//                 icon: discord
+//             }
+//         ]
+//     },
+//     {
+//         avatar: avatar4,
+//         name: "Julie Greenbaum",
+//         role: "Charity Partnership Representative",
+//         smlinks: [
+//             {
+//                 name: "facebook",
+//                 link: "https://facebook.com",
+//                 icon: facebook
+//             },
+//             {
+//                 name: "twitter",
+//                 link: "https://twitter.com",
+//                 icon: twitter
+//             },
+//             {
+//                 name: "instagram",
+//                 link: "https://instagram.com",
+//                 icon: instagram
+//             },
+//             {
+//                 name: "discord",
+//                 link: "https://discord.com",
+//                 icon: discord
+//             }
+//         ]
+//     }
+// ];
+
+const teamobj = teamdata;
 
 const responsive = {
     superLargeDesktop: {

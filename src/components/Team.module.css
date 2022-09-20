@@ -1,5 +1,5 @@
 .team {
-    background: url('../assets/team/teamback1a.jpg') no-repeat center 10%;
+    background: url('../assets/team/teamback1b.jpg') no-repeat center 10%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
@@ -75,7 +75,7 @@
 @media only screen and (max-width: 600px) {
     .teamheader {
         /* height: 4vh; */
-        padding-top: 5vh;
+        padding-top: 3vh;
     }
     .aboutus h2 {
         font-size: 1.5rem;

@@ -5,28 +5,34 @@ import facebook from '../assets/social/facebook.svg';
 import twitter from '../assets/social/twitter.svg';
 import instagram from '../assets/social/instagram.svg';
 import discord from '../assets/social/discord.svg';
+import tiktok from '../assets/social/tiktok.svg';
 import styles from './Header.module.css';
 
 const smlinksobj = [
     {
         name: "facebook",
-        link: "https://facebook.com",
+        link: "https://www.facebook.com/deeznfts",
         icon: facebook
     },
     {
         name: "twitter",
-        link: "https://twitter.com",
+        link: "https://twitter.com/Laydeeznft",
         icon: twitter
     },
     {
         name: "instagram",
-        link: "https://instagram.com",
+        link: "https://www.instagram.com/deezmeta",
         icon: instagram
     },
     {
         name: "discord",
-        link: "https://discord.com",
+        link: "https://discord.gg/deeznft",
         icon: discord
+    },
+    {
+        name: "tiktok",
+        link: "https://www.tiktok.com/@deezmeta",
+        icon: tiktok
     }
 ]
 

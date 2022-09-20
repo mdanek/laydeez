@@ -47,8 +47,6 @@
     grid-column: 1/2;
     grid-row: 2/3;
     max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
     /* position: absolute; */
     /* left: 0;
     top: 20%; */
@@ -117,6 +115,10 @@
         transform: translate(-50%, 0);
         top: 0; */
         /* width: 70%; */
+    }
+    .text {
+        margin-left: auto;
+        margin-right: auto;
     }
     .scroll {
         display: none;

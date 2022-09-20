@@ -201,9 +201,14 @@ function App() {
     mobile = true;
   } else mobile = false;
 
+  const appContainer = useRef(null);
+  let vh = window.innerHeight * 0.01;
+  // appContainer.current.style.setProperty('--vh', `${vh}px`);
+  useEffect(() => appContainer.current.style.setProperty('--vh', `${vh}px`), [])
+ 
 //Main app section -----------------------------------------------------------
   return (
-    <div className={`${styles.app}`}>
+    <div ref={appContainer} className={`${styles.app}`}>
       <img ref={animationContainer} src={rainbowimg} className={`${styles.rainbow}`}/>
       <div onClick={closeOnContainer} ref={scrollContainer} onWheel={reactToScrolling} onTouchStart={reactToTouchStart}  onTouchEnd={reactToTouchEnd} className={`${styles.mycontainer} ${toggleMenu ? styles.openMenu : styles.closeMenu}`}>        
         <div ref={pagesContainer} className={styles.page}>

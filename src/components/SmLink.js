@@ -7,6 +7,10 @@ const SmLink = ({ smlink, small }) => {
         smallIcon = styles.small; 
     };
 
+    // if (smlink.name === "whitepaper") {
+    //     smallIcon = styles.large;
+    // }
+
     return (
 
         <a className={styles.smlink} href={smlink.link}>

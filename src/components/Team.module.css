@@ -18,6 +18,7 @@
 
 .teamheader {
     height: 9vh;
+    padding-top: 1vh;
     width: 100%;
     object-fit: contain;
 }
@@ -35,8 +36,9 @@
     background: rgb(73, 79, 157);
     margin: 0;
     padding: 2vw;
-    font-size: 2.2rem;
-    font-weight: 900;
+    font-family: anton;
+    font-size: 3rem;
+    font-weight: 300;
     border-radius: 10px 0 0 10px;
     text-transform: uppercase;
     text-align: left;
@@ -55,7 +57,7 @@
 .cards {
     width: 80vw;
     height: 40vh;
-    margin-bottom: 3vh;
+    margin-bottom: 5vh;
     margin-left: auto;
     margin-right: auto;
     padding-top: 10vh;
@@ -75,7 +77,8 @@
 
 @media only screen and (max-width: 600px) {
     .cards {
-        height: 30vh;
+        height: 35vh;
+        margin-bottom: 2vh;
     }
     .teamheader {
         max-width: 50%;

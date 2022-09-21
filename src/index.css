@@ -8,6 +8,16 @@
   src: url('assets/fonts/genty.ttf');
 }
 
+@font-face {
+  font-family: 'deeznuts';
+  src: url('assets/fonts/deeznutsfont.ttf');
+}
+
+@font-face {
+  font-family: 'anton';
+  src: url('assets/fonts/anton.ttf');
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {

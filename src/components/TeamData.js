@@ -9,7 +9,7 @@ export default [
     {
         avatar: Avatars[0],
         name: "Papa Nut",
-        role: "Co Founder",
+        role: "Founder",
         smlinks: [
             {
                 name: "twitter",
@@ -21,7 +21,7 @@ export default [
     {
         avatar: Avatars[1],
         name: "Lexi Grey",
-        role: "Co Founder",
+        role: "Project Manager",
         smlinks: [
             {
                 name: "twitter",
@@ -33,7 +33,7 @@ export default [
     {
         avatar: Avatars[2],
         name: "Cookie",
-        role: "?",
+        role: "Community Manager",
         smlinks: [
             {
                 name: "twitter",
@@ -45,13 +45,13 @@ export default [
     {
         avatar: Avatars[3],
         name: "Alina",
-        role: "?",
+        role: "2D Art Illustrator",
         smlinks: []
     },
     {
         avatar: Avatars[4],
         name: "Julie",
-        role: "?",
+        role: "Partner, F*ck Cancer Foundation",
         smlinks: [
             {
                 name: "twitter",
@@ -63,25 +63,25 @@ export default [
     {
         avatar: Avatars[5],
         name: "Olesia",
-        role: "?",
+        role: "Full Stack Developer",
         smlinks: []
     },
     {
         avatar: Avatars[6],
         name: "Squish",
-        role: "?",
+        role: "Lead Game Developer ",
         smlinks: []
     },
     {
         avatar: Avatars[7],
         name: "Ronnie",
-        role: "?",
+        role: "Web & UI Designer",
         smlinks: []
     },
     {
         avatar: Avatars[8],
         name: "Smokey",
-        role: "?",
+        role: "Assistant Community Manager",
         smlinks: [
             {
                 name: "twitter",
@@ -93,7 +93,7 @@ export default [
     {
         avatar: Avatars[9],
         name: "Avacaaado",
-        role: "?",
+        role: "Forum Moderator",
         smlinks: [
             {
                 name: "twitter",
@@ -105,7 +105,7 @@ export default [
     {
         avatar: Avatars[10],
         name: "Planko",
-        role: "?",
+        role: "Forum Moderator",
         smlinks: [
             {
                 name: "twitter",
@@ -117,7 +117,7 @@ export default [
     {
         avatar: Avatars[11],
         name: "Jingle",
-        role: "?",
+        role: "Music Producer",
         smlinks: [
             {
                 name: "twitter",
@@ -129,25 +129,25 @@ export default [
     {
         avatar: Avatars[12],
         name: "Marcella",
-        role: "?",
+        role: "Smart Contract Developer",
         smlinks: []
     },
     {
         avatar: Avatars[13],
         name: "Simon",
-        role: "?",
+        role: "Lead Game Producer",
         smlinks: []
     },
     {
         avatar: Avatars[14],
         name: "Soleil Moon",
-        role: "?",
+        role: "Operations Manager",
         smlinks: []
     },
     {
         avatar: Avatars[15],
         name: "Jazz Maya",
-        role: "?",
+        role: "Social Media Manager",
         smlinks: []
     }
 ];

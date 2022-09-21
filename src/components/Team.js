@@ -51,7 +51,7 @@ const Team = ({ active, handleToggleMenu }) => {
                     keyBoardControl={true}
                 >
                             {teamobj.map((member, index) => 
-                            (<TeamCard key={index} member={member} />))}
+                            (<TeamCard index={index} key={index} member={member} />))}
                 </Carousel>
         </div>
     )

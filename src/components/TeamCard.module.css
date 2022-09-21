@@ -2,9 +2,16 @@
     text-align: center;
 }
 
+.cardContainer {
+    border-radius: 10px;
+    box-shadow: 0px 20px 10px 0px rgba(66, 68, 90, 0.1);
+    height: 25vh;
+}
+
 .card {
     background-color: rgb(80, 232, 0);
     border-radius: 10px;
+    box-shadow: 0px 10px rgb(51, 146, 0);
     padding: 0;
     margin-bottom: 0;
     position: relative;
@@ -14,22 +21,48 @@
     height: 25vh;
 }
 
+.cardColor0 {
+    background-color: #fb60d5;
+    box-shadow: 0px 7px #ce469f;
+}
+.cardColor1 {
+    background-color: #fff87f;
+    box-shadow: 0px 7px #d2c85b;
+}
+.cardColor2 {
+    background-color: #0fe0e7;
+    box-shadow: 0px 7px #0cabb3;
+}
+.cardColor3 {
+    background-color: #2eda87;
+    box-shadow: 0px 7px #21a661;
+}
+
 .card h3 {
-    color: rgb(255, 191,  33);
+    color: white;
     font-size: 1.5rem;
     font-weight: 100;
-    font-family: genty;
+    font-family: deeznuts, genty, roboto;
     letter-spacing: 0.1rem;
     grid-column: 1/2;
     grid-row: 2/3;
 }
 
+.cardColor1 h3 {
+    color: #52107a;
+}
+
 .card span {
+    color: white;
     font-size: 1rem;
-    font-weight: 800;
+    font-weight: 500;
     padding-bottom: 2vh;
     grid-column: 1/2;
     grid-row: 3/4;
+}
+
+.cardColor1 span {
+    color: #52107a;
 }
 
 .smLinksDiv {

@@ -33,6 +33,15 @@
     width: 100%;
 }
 
+.whitepaper {
+}
+
+.whitepaperImage {
+    object-fit: contain;
+    max-height: 8vh;
+    width: 100%;
+}
+
 @media only screen and (min-width: 2500px) {
     .button { 
         height: calc( 4rem + var(--step-2));
@@ -43,5 +52,13 @@
     .button { 
         height: calc( 5rem + var(--step-3
         ));
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .whitepaperImage {
+        object-fit: contain;
+        max-height: 4vh;
+        width: 100%;
     }
 }

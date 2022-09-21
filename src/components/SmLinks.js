@@ -12,7 +12,7 @@ const SmLinks = ({ smlinks, small, button }) => {
 
     return (
         <ul className={`${styles.smlinks} col-11 ${smallStyle}`}>
-            {button ? (<li><Button button={button}></Button></li>) : null}
+            {button ? (<li className={styles.whitepaper}><Button button={button}></Button></li>) : null}
         {smlinks.map((smlink, index) => 
             (<SmLink key={index} smlink={smlink} small={small} />))}
         </ul>

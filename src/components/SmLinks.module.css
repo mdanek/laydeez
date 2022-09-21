@@ -17,6 +17,11 @@
     width: 100%;
 }
 
+.whitepaper {
+    width: fit-content;
+    padding-right: 2vw;
+}
+
 @media only screen and (max-width: 600px) {
     .smlinks {
         padding-right: 3vw;
@@ -25,4 +30,10 @@
     .small {
         display: inherit!important;
     }
+
+    .whitepaper {
+        width: 25%;
+        padding-right: 2vw;
+    }
+    
 }

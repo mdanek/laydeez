@@ -39,7 +39,6 @@
 .whitepaperImage {
     object-fit: contain;
     max-height: 8vh;
-    width: 100%;
 }
 
 @media only screen and (min-width: 2500px) {
@@ -59,6 +58,5 @@
     .whitepaperImage {
         object-fit: contain;
         max-height: 4vh;
-        width: 100%;
     }
 }

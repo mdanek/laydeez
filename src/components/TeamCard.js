@@ -23,7 +23,7 @@ const TeamCard = ({index, member}) => {
             break;
         }
     }
-    console.log(cardColor)
+    
     return (
         <div className={styles.cardContainer}>
             <div className={`${styles.card} ${cardColor}`}>

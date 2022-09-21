@@ -21,7 +21,7 @@ const openseaBtn = {
     img: opensea
 };
 
-const h3String = "<span style='color: rgb(255, 241, 124)'>LayDeez NFT</span> is a collection of 5,555 unique profile pictures which will mint for .069 <span style='color: rgb(255, 241, 124)'>ETH</span> each. Every <span style='color: rgb(255, 241, 124)'>NFT</span> in the collection will come with additional utility and unlock special features including access to our play-to-earn games.";
+const h3String = "<span style='color: rgb(255, 241, 124)'>LayDeez NFT</span> is a collection of unique profile pictures from the creators of <span style='color: rgb(255, 241, 124)'>Deez Nuts</span>. Every <span style='color: rgb(255, 241, 124)'>NFT</span> in the collection will come with additional utility and unlock special features including access to our play-to-earn games.";
 
 const Home = ({ active, handleToggleMenu, mobile }) => {
 

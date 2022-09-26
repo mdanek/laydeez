@@ -4,11 +4,7 @@ import Navbar from "./Navbar";
 import whitepaper from '../assets/whitepaper.png';
 import deez from '../assets/social/dicon.svg';
 import linktree from '../assets/social/linktree.svg';
-import facebook from '../assets/social/facebook.svg';
-import twitter from '../assets/social/twitter.svg';
-import instagram from '../assets/social/instagram.svg';
-import discord from '../assets/social/discord.svg';
-import tiktok from '../assets/social/tiktok.svg';
+import whitepaperDocu from '../assets/Laydeez_WP.pdf';
 import styles from './Header.module.css';
 
 const smlinksobj = [
@@ -56,7 +52,7 @@ const smlinksobj = [
 
 const whitepaperBtn = {
     text: "whitepaper",
-    link: "https://deeznft.io/",
+    link: whitepaperDocu,
     img: whitepaper
 };
 

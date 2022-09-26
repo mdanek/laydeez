@@ -1,6 +1,6 @@
 import TeamCard from "./TeamCard";
 import Header from "./Header";
-import teamheader from '../assets/team/teamheader2.png';
+import teamheader from '../assets/team/teamheader3.png';
 import teamdata from './TeamData';
 import styles from './Team.module.css';
 import Carousel from 'react-multi-carousel';

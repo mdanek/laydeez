@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import Menu from './components/Menu';
-import Header from './components/Header';
 import Home from './components/Home';
 import Team from './components/Team';
 import Twodthreed from './components/Twodthreed';
@@ -43,7 +42,7 @@ function App() {
     let fullContainerWidth = pagesContainer.current.offsetWidth;
 
     //scroll right on mousewheel down after small timeout
-    if (direction === "right" || event.deltaY > 0 && canScroll) {
+    if (event.deltaY > 0 && canScroll) {
       setTimeout(() => {
         scrollContainer.current.scrollLeft += (1 * scrollContainer.current.offsetWidth);
       }, delay/10);
@@ -51,7 +50,7 @@ function App() {
     }
 
     //scroll left on mousewheel up after small timeout
-    if (direction === "left" || event.deltaY < 0 && canScroll) {
+    if (event.deltaY < 0 && canScroll) {
       setTimeout(() => {
         scrollContainer.current.scrollLeft += (-1 * scrollContainer.current.offsetWidth);
       }, delay/10);
@@ -160,20 +159,29 @@ function App() {
   }
 
   //Handle mobile/desktop version
-  let mobile = false;
-  if(window.innerWidth <= 600) {
-    mobile = true;
-  } else mobile = false;
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      if(window.innerWidth <= 600) {
+        setMobile(true);
+      } else setMobile(false);
+    }
+    window.addEventListener('resize', handleResize)
+    return _ => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+  
 
   const appContainer = useRef(null);
   let vh = window.innerHeight * 0.01;
-  // appContainer.current.style.setProperty('--vh', `${vh}px`);
   useEffect(() => appContainer.current.style.setProperty('--vh', `${vh}px`), [])
  
 //Main app section -----------------------------------------------------------
   return (
     <div ref={appContainer} className={`${styles.app}`}>
-      <img ref={animationContainer} src={rainbowimg} className={`${styles.rainbow}`}/>
+      <img ref={animationContainer} src={rainbowimg} className={`${styles.rainbow}`} alt="rainbow"/>
       <div onClick={closeOnContainer} ref={scrollContainer} onWheel={reactToScrolling} onTouchStart={reactToTouchStart}  onTouchEnd={reactToTouchEnd} className={`${styles.mycontainer} ${toggleMenu ? styles.openMenu : styles.closeMenu}`}>        
         <div ref={pagesContainer} className={styles.page}>
           <Home handleToggleMenu={handleToggleMenu} mobile={mobile}></Home>

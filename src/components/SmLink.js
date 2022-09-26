@@ -13,7 +13,7 @@ const SmLink = ({ smlink, small }) => {
 
     return (
 
-        <a className={styles.smlink} href={smlink.link}>
+        <a className={styles.smlink} href={smlink.link} target="_blank" rel="noopener noreferrer">
             <li>
                 <img className={smallIcon} src={smlink.icon} alt={smlink.name}></img>
             </li>

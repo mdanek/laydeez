@@ -12,7 +12,7 @@ const Button = ({ button }) => {
     }
 
     return (
-        <a className={`${buttonWhitepaper} button`} href={button.link}>
+        <a className={`${buttonWhitepaper} button`} href={button.link} target="_blank" rel="noopener noreferrer">
             <img src={button.img} alt={button.text} className={buttonWhitepaperImage}></img>
         </a>
     )

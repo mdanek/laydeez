@@ -1,10 +1,9 @@
-import breeding from '../assets/breeding/breedingimg2.png';
+import breeding from '../assets/breeding/breedingimg3.png';
 import mintnow from '../assets/home/mintnow.png';
 import opensea from '../assets/home/opensea.png';
 import Header from './Header';
 import PageBody from './PageBody';
 import styles from './Breeding.module.css';
-import Rainbow from './Rainbow';
 
 const mintnowBtn = {
     text: "Mint Now",

@@ -1,10 +1,9 @@
-import playtoearn from '../assets/playtoearn/playtoearnimg2.png';
+import playtoearn from '../assets/playtoearn/playtoearnimg3.png';
 import mintnow from '../assets/home/mintnow.png';
 import opensea from '../assets/home/opensea.png';
 import Header from './Header';
 import PageBody from './PageBody';
 import styles from './Playtoearn.module.css';
-import Rainbow from './Rainbow';
 
 const mintnowBtn = {
     text: "Mint Now",

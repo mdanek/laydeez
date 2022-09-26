@@ -2,7 +2,7 @@ import arreadyvideo from '../assets/arready/arreadyvideo1.mp4';
 import arreadyvideoMob from '../assets/arready/arreadyvideo-mob1.mp4';
 import arreadyvideoposter from '../assets/arready/arbackground1b.jpg';
 import arreadyvideoposterMob from '../assets/arready/arbackground1b-mob.jpg';
-import arready from '../assets/arready/arready3.png';
+import arready from '../assets/arready/arready4.png';
 import learnmore from '../assets/arready/learnmore.png';
 import opensea from '../assets/arready/opensea.png';
 import Header from './Header';

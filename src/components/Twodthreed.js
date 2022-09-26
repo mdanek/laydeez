@@ -1,4 +1,4 @@
-import twothreedimage from '../assets/twodthreed/twodthreedlaydeez3.png';
+import twothreedimage from '../assets/twodthreed/twodthreedlaydeez4.png';
 import twodthreedvideo from '../assets/twodthreed/twodthreedvideo1.mp4';
 import twodthreedvideoMob from '../assets/twodthreed/twodthreedvideo-mob1.mp4';
 import twodthreedvideoposter from '../assets/twodthreed/twodthreed1b.jpg';
@@ -8,7 +8,6 @@ import opensea from '../assets/twodthreed/opensea.png';
 import PageBody from './PageBody';
 import styles from './Twodthreed.module.css';
 import Header from './Header';
-import Rainbow from './Rainbow';
 
 const earnnowBtn = {
     text: "Earn Now",

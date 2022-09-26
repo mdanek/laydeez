@@ -1,10 +1,9 @@
-import fcancer from '../assets/fcancer/fcancerimg2.png';
+import fcancer from '../assets/fcancer/fcancerimg3.png';
 import mintnow from '../assets/home/mintnow.png';
 import opensea from '../assets/home/opensea.png';
 import Header from './Header';
 import PageBody from './PageBody';
 import styles from './Fcancer.module.css';
-import Rainbow from './Rainbow';
 
 const mintnowBtn = {
     text: "Mint Now",

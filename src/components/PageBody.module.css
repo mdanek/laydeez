@@ -53,6 +53,9 @@
     height: fit-content;
     background-color: rgba(249, 97, 195, 0.7);
     border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 14px 0px rgba(66, 68, 90, 0.2);
+    -moz-box-shadow: 5px 5px 14px 0px rgba(66, 68, 90, 0.2);
+    box-shadow: 5px 5px 14px 0px rgba(66, 68, 90, 0.2);
     padding: 1% 3%;
 }
 

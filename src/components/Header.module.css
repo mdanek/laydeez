@@ -10,4 +10,8 @@
     .rightSide {
         justify-content: flex-end;
     }
+
+    .header {
+        top: 0;
+    }
 }

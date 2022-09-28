@@ -33,7 +33,7 @@
     width: 100vw;
     overflow-x: hidden;
     overflow-y: hidden;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     scroll-snap-type: x mandatory;
     position: relative;
 }

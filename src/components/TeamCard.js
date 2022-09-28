@@ -4,6 +4,7 @@ import styles from './TeamCard.module.css';
 const TeamCard = ({index, member}) => {
     const small = true;
     let cardColor;
+    let purple = false;
 
     switch (index%4) {
         case 0: {
@@ -12,6 +13,7 @@ const TeamCard = ({index, member}) => {
         }
         case 1: {
             cardColor = styles.cardColor1
+            purple = true;
             break;
         }
         case 2: {
@@ -31,7 +33,7 @@ const TeamCard = ({index, member}) => {
                 <h3 className={styles.name}>{member.name}</h3>
                 <span className={styles.role}>{member.role}</span>
                 <div className={styles.smLinksDiv}>
-                    <SmLinks small={small} smlinks={member.smlinks}></SmLinks>
+                    <SmLinks small={small} purple={purple} smlinks={member.smlinks}></SmLinks>
                 </div>
             </div>
         </div>

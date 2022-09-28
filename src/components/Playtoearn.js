@@ -16,7 +16,7 @@ const openseaBtn = {
     img: opensea
 };
 
-const h3String = "<span style='color: rgb(255, 241, 124)'>JR'Z</span> <span style='color: rgb(0, 199, 237)'>NFT</span> is a play to earn nft that gives access to making up to $250 a day!";
+const h3String = "The children <span style='color: rgb(255, 241, 124)'>Laydeez</span> can create are called Jr'z. Jr'z are essentially free <span style='color: rgb(0, 199, 237)'>NFT</span>'s produced by your <span style='color: rgb(255, 241, 124)'>Laydeez</span>. These give you access to a variety of Play to Earn Games that we've produced. Over $500 per day will be given out!";
 
 const Playtoearn = ({ active, handleToggleMenu, mobile }) => {
 

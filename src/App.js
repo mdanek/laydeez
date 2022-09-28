@@ -45,7 +45,7 @@ function App() {
     if (event.deltaY > 0 && canScroll) {
       setTimeout(() => {
         scrollContainer.current.scrollLeft += (1 * scrollContainer.current.offsetWidth);
-      }, delay/10);
+      }, delay/4);
       if(pageRightSide < fullContainerWidth) showRainbowAnimation(delay);
     }
 
@@ -53,7 +53,7 @@ function App() {
     if (event.deltaY < 0 && canScroll) {
       setTimeout(() => {
         scrollContainer.current.scrollLeft += (-1 * scrollContainer.current.offsetWidth);
-      }, delay/10);
+      }, delay/4);
       if(pageLeftSide > 0) showRainbowAnimation(delay);
     }
   }
@@ -174,10 +174,9 @@ function App() {
     }
   }, [])
   
-
   const appContainer = useRef(null);
   let vh = window.innerHeight * 0.01;
-  useEffect(() => appContainer.current.style.setProperty('--vh', `${vh}px`), [])
+  useEffect(() => appContainer.current.style.setProperty('--vh', `${vh}px`), []);
  
 //Main app section -----------------------------------------------------------
   return (

@@ -16,7 +16,7 @@ const openseaBtn = {
     img: opensea
 };
 
-const h3String = "<span style='color: rgb(255, 241, 124)'>LayDeez </span><span style='color: rgb(0, 199, 237)'>NFT</span> are capable of breeding and giving offspring name <span style='color: rgb(255, 241, 124)'>JR'Z</span>.";
+const h3String = "<span style='color: rgb(255, 241, 124)'>Laydeez </span> have an on contract Breeding Function which allows them to create unique <span style='color: rgb(0, 199, 237)'>NFT</span>'s you can receive on chain. These will give our holders access to our Play to Earn Games. Learn more by downloading our White Paper.";
 
 const Breeding = ({ active, handleToggleMenu, mobile }) => {
 

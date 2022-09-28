@@ -17,6 +17,10 @@
     filter: invert(1) !important;
 }
 
+.purple {
+    filter: invert(9%) sepia(65%) saturate(5994%) hue-rotate(276deg) brightness(84%) contrast(98%) !important;
+}
+
 /* .large {
     width: 10vw!important;
 } */

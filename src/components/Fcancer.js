@@ -16,7 +16,7 @@ const openseaBtn = {
     img: opensea
 };
 
-const h3String = "<span style='color: rgb(255, 241, 124)'>Laydeez</span> <span style='color: rgb(0, 199, 237)'>NFT</span> is a proud sponsor of the Fuck Cancer foundation and give to them regularly.";
+const h3String = "<span style='color: rgb(255, 241, 124)'>Laydeez</span> and the <span style='color: rgb(255, 241, 124)'>Deez</span> ecosystem is using Web 3 to make a positive change. We are committed to raising over a quarter million dollars for our partner charity, Fuck Cancer. Our ecosystem has already raised over $50k and is set to donate another $50k after <span style='color: rgb(255, 241, 124)'>Laydeez</span> mint. We are also on the board of advisors of the giving platform <a href='https://www.generaize.com' style='color: rgb(0, 199, 237)'>generaize.com</a>.";
 
 const Fcancer = ({ active, handleToggleMenu, mobile }) => {
 

@@ -64,13 +64,25 @@ export default [
         avatar: Avatars[5],
         name: "Olesia",
         role: "Full Stack Developer",
-        smlinks: []
+        smlinks: [
+            {
+                name: "instagram",
+                link: "https://www.instagram.com/olesia_learns/",
+                icon: instagram
+            }
+        ]
     },
     {
         avatar: Avatars[6],
         name: "Squish",
         role: "Lead Game Developer ",
-        smlinks: []
+        smlinks: [
+            {
+                name: "instagram",
+                link: "https://www.instagram.com/joshuasagar/",
+                icon: instagram
+            }
+        ]
     },
     {
         avatar: Avatars[7],

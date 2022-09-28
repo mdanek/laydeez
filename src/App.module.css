@@ -75,6 +75,12 @@
     height: 100%;
 }
 
+@media only screen and (min-width: 1001px) and (max-width: 1599px) and (min-height: 1001px){
+    .rainbow {
+        left: -450vw;
+    }
+}
+
 @media only screen and (min-width: 1600px) {
     .rainbow {
         width: calc(200vw + calc(40*var(--step-4)));

@@ -97,7 +97,10 @@ function App() {
   }
 
   //Execute mobile full page horizontal scroll
-  const executeSwipe = (direction) => {  
+  const executeSwipe = (direction) => {
+    let pageRightSide = scrollContainer.current.scrollLeft + scrollContainer.current.offsetWidth;
+    let fullContainerWidth = pagesContainer.current.offsetWidth;
+
     //swipe right
     if (direction === "right") {
       scrollContainer.current.scrollLeft += (1 * scrollContainer.current.offsetWidth);
@@ -106,6 +109,11 @@ function App() {
     //left
     if (direction === "left") {
       scrollContainer.current.scrollLeft += (-1 * scrollContainer.current.offsetWidth);
+    }
+
+    //after last slide go to home
+    if (direction === "right" && pageRightSide === fullContainerWidth) {
+      scrollContainer.current.scrollLeft = 0;
     }
   }
 

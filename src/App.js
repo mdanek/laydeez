@@ -41,11 +41,18 @@ function App() {
     let pageRightSide = scrollContainer.current.scrollLeft + scrollContainer.current.offsetWidth;
     let fullContainerWidth = pagesContainer.current.offsetWidth;
 
-    //scroll right on mousewheel down after small timeout
+    //scroll right on mousewheel down after small timeout, on last slide go to home
     if (event.deltaY > 0 && canScroll) {
-      setTimeout(() => {
-        scrollContainer.current.scrollLeft += (1 * scrollContainer.current.offsetWidth);
-      }, delay/4);
+      if(pageRightSide === fullContainerWidth) {
+        setTimeout(() => {
+          scrollContainer.current.scrollLeft = 0;
+        }, delay/4);
+        showRainbowAnimation(delay);
+      } else {
+        setTimeout(() => {
+          scrollContainer.current.scrollLeft += (1 * scrollContainer.current.offsetWidth);
+        }, delay/4);
+      }
       if(pageRightSide < fullContainerWidth) showRainbowAnimation(delay);
     }
 

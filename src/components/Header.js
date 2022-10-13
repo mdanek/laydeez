@@ -8,11 +8,6 @@ import whitepaperDocu from '../assets/Laydeez_WP.pdf';
 import styles from './Header.module.css';
 
 const smlinksobj = [
-    // {
-    //     name: "whitepaper",
-    //     link: "https://deeznft.io/",
-    //     icon: whitepaper
-    // },
     {
         name: "deez website",
         link: "https://deeznft.io/",
@@ -62,7 +57,7 @@ const Header = ({ handleToggleMenu }) => {
         <header className={`${styles.header} row m-0 p-3 col-12`}>
             <Logo></Logo>
             <div className={`${styles.rightSide} col-10 row`}>
-                <SmLinks smlinks={smlinksobj} button={whitepaperBtn}></SmLinks>
+                <SmLinks smlinks={smlinksobj}></SmLinks>
                 <Navbar handleToggleMenu={handleToggleMenu}></Navbar>
             </div>
         </header>

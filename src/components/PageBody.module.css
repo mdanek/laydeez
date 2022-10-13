@@ -124,6 +124,9 @@
         margin-right: auto;
     }
     .scroll {
-        display: none;
+        width: 6%;
+        margin-top: auto;
+        margin-bottom: 6vh;
+        margin-left: 5vw;
     }
 }

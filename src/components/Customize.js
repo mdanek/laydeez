@@ -28,7 +28,7 @@ const Customize = ({ handleToggleMenu, mobile }) => {
         <div id="customize" className={`${styles.customize} page`}>
             <video className={styles.customizevideo} src={mobile ? customizevideoMob : customizevideo} poster={mobile ? customizevideoposterMob : customizevideoposter} muted autoPlay={"autoplay"} preload="auto" loop playsInline />
             <Header handleToggleMenu={handleToggleMenu}></Header>
-            <PageBody img={customizeimage} h3String={h3String} buttons={[earnnowBtn, openseaBtn]}></PageBody>
+            <PageBody img={customizeimage} h3String={h3String} buttons={[earnnowBtn, openseaBtn]} mobile={mobile}></PageBody>
         </div>
     )
 }

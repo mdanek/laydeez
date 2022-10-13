@@ -29,7 +29,7 @@ const Twodthreed = ({ active, handleToggleMenu, mobile }) => {
             {/* <Rainbow active={active}></Rainbow> */}
             <video className={styles.twodthreedvideo} src={mobile ? twodthreedvideoMob : twodthreedvideo} poster={mobile ? twodthreedvideoposterMob : twodthreedvideoposter} muted autoPlay={"autoplay"} preload="auto" loop playsInline />
             <Header handleToggleMenu={handleToggleMenu}></Header>
-            <PageBody img={twothreedimage} h3String={h3String} buttons={[earnnowBtn, openseaBtn]}></PageBody>
+            <PageBody img={twothreedimage} h3String={h3String} buttons={[earnnowBtn, openseaBtn]} mobile={mobile}></PageBody>
         </div>
     )
 }

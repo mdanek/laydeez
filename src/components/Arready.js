@@ -27,7 +27,7 @@ const Arready = ({ handleToggleMenu, mobile }) => {
         <div id="arready" className={`${styles.arready} page`}>
             <video className={styles.arreadyvideo} src={mobile ? arreadyvideoMob : arreadyvideo} poster={mobile ? arreadyvideoposterMob : arreadyvideoposter} muted autoPlay={"autoplay"} preload="auto" loop playsInline />
             <Header handleToggleMenu={handleToggleMenu}></Header>
-            <PageBody img={arready} h3String={h3String} buttons={[learnmoreBtn, openseaBtn]}></PageBody>
+            <PageBody img={arready} h3String={h3String} buttons={[learnmoreBtn, openseaBtn]} mobile={mobile}></PageBody>
         </div>
     )
 }

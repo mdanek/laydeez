@@ -2,12 +2,18 @@ import Logo from "./Logo";
 import SmLinks from "./SmLinks";
 import Navbar from "./Navbar";
 import whitepaper from '../assets/whitepaper.png';
+import paperimg from '../assets/social/paper_clip.png';
 import deez from '../assets/social/dicon.svg';
 import linktree from '../assets/social/linktree.svg';
-import whitepaperDocu from '../assets/Laydeez_WP.pdf';
+import whitepaperDocu from '../assets/LayDeez_WP_Update.pdf';
 import styles from './Header.module.css';
 
 const smlinksobj = [
+    {
+        name: "White Paper",
+        link: whitepaperDocu,
+        icon: paperimg
+    },
     {
         name: "deez website",
         link: "https://deeznft.io/",
@@ -57,6 +63,7 @@ const Header = ({ handleToggleMenu }) => {
         <header className={`${styles.header} row m-0 p-3 col-12`}>
             <Logo></Logo>
             <div className={`${styles.rightSide} col-10 row`}>
+
                 <SmLinks smlinks={smlinksobj}></SmLinks>
                 <Navbar handleToggleMenu={handleToggleMenu}></Navbar>
             </div>
